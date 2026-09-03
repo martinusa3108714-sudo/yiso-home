@@ -1,0 +1,17 @@
+YISO INTERIOR 홈페이지 HTML 시안
+
+1. 압축을 해제합니다.
+2. 폴더 안의 index.html 파일을 더블클릭합니다.
+3. Chrome, Edge 등 웹 브라우저에서 홈페이지를 확인할 수 있습니다.
+4. SPACES WE DESIGN의 사진 또는 프로젝트 보기를 누르면 각 프로젝트 상세 페이지로 이동합니다.
+5. PROJECT INQUIRY 또는 프로젝트 문의하기를 누르면 inquiry.html 문의 페이지로 이동합니다.
+
+주의: assets, images 폴더와 HTML, CSS, JS 파일은 현재 폴더 구조 그대로 두어야 디자인과 이미지가 정상적으로 표시됩니다.
+
+프로젝트 상세 페이지
+- project-residential.html
+- project-hospitality.html
+- project-architecture.html
+
+프로젝트 문의 페이지
+- inquiry.html

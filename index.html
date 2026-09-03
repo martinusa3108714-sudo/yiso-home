@@ -16,6 +16,19 @@
 .hero-image{background-image:url("./images/hero-hotel.jpg")}
 .discipline-group{display:flex;flex:0 0 max(100vw,58rem);align-items:center;justify-content:space-around;padding:0 clamp(1rem,2vw,2.5rem)}
 .discipline-group span{flex-shrink:0;padding-right:0}
+.project-card-link{display:block;color:inherit}
+.space-copy .project-link{display:inline-flex;align-items:center;gap:.6rem;width:max-content;margin-top:.4rem;color:inherit;font-size:.78rem;font-weight:800;text-transform:uppercase}
+.space-copy .project-link svg{width:1rem;height:1rem;transition:transform .2s ease}
+.space-copy .project-link:hover svg,.space-copy .project-link:focus-visible svg{transform:translateX(4px)}
+.project-card-link:focus-visible,.space-copy .project-link:focus-visible{outline:2px solid #f12a0f;outline-offset:4px}
+.contact{background:#151513;color:#f3f0e9;min-height:88vh;padding-top:clamp(7rem,10vw,10rem)}
+.contact-grid{opacity:.1;background-image:linear-gradient(rgba(243,240,233,.34) 1px,transparent 1px),linear-gradient(90deg,rgba(243,240,233,.34) 1px,transparent 1px)}
+.contact-kicker{color:#f12a0f}
+.contact h2{letter-spacing:0;max-width:12ch;margin-bottom:clamp(3.5rem,6vw,6rem)}
+.contact h2 em{color:#aaa69d;letter-spacing:0}
+.contact-button{background:#f3f0e9;color:#151513;border:1px solid #f3f0e9}
+.contact-button:hover,.contact-button:focus-visible{background:transparent;color:#f3f0e9;border-color:#f12a0f;transform:translateY(-4px)}
+.contact-bottom{border-color:rgba(243,240,233,.28);color:rgba(243,240,233,.72)}
 </style>
 </head>
 <body>
@@ -31,7 +44,7 @@
 <a href="#spaces">SPACES</a>
 <a href="#process">PROCESS</a>
 </nav>
-<a class="header-contact" href="#contact">PROJECT INQUIRY <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+<a class="header-contact" href="./inquiry.html">PROJECT INQUIRY <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
 <path d="M7 7h10v10">
 </path>
 <path d="M7 17 17 7">
@@ -175,18 +188,18 @@
 </div>
 <div class="space-list">
 <article class="space-card space-card--portrait">
-<div class="space-image-wrap">
+<a class="space-image-wrap project-card-link" href="./project-residential.html" aria-label="마리나 듀플렉스 펜트하우스 프로젝트 상세 보기">
 <img src="./images/residential-large.jpg" alt="복층 구조와 파노라마 창을 갖춘 대규모 하이엔드 레지던스" class="space-image"/>
 <span class="image-corner" aria-hidden="true">YISO / <!-- -->01</span>
-</div>
+</a>
 <div class="space-copy">
 <div class="space-meta">
 <span>01</span>
 <span>RESIDENTIAL</span>
 </div>
-<h3>삶의 기준이 되는 레지던스</h3>
-<p>펜트하우스와 대규모 고급 주거까지, 건축의 스케일과 거주자의 생활을 함께 읽어 오래 가치 있는 공간을 설계합니다.</p>
-<a href="#contact">프로젝트 상담하기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+<h3>마리나 듀플렉스 펜트하우스</h3>
+<p>복층의 구조감과 항구 조망, 월넛과 대리석의 차분한 재료감을 하나의 언어로 완성한 하이엔드 레지던스입니다.</p>
+<a class="project-link" href="./project-residential.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
 <path d="M5 12h14">
 </path>
 <path d="m12 5 7 7-7 7">
@@ -196,18 +209,18 @@
 </div>
 </article>
 <article class="space-card space-card--landscape">
-<div class="space-image-wrap">
+<a class="space-image-wrap project-card-link" href="./project-hospitality.html" aria-label="더 아트리움 그랜드 호텔 프로젝트 상세 보기">
 <img src="./images/hotel-commercial.jpg" alt="다층 아트리움과 대형 라운지를 갖춘 럭셔리 호텔 로비" class="space-image"/>
 <span class="image-corner" aria-hidden="true">YISO / <!-- -->02</span>
-</div>
+</a>
 <div class="space-copy">
 <div class="space-meta">
 <span>02</span>
 <span>HOSPITALITY</span>
 </div>
-<h3>규모로 기억되는 호스피탈리티</h3>
-<p>호텔과 대형 상업시설의 첫인상부터 머무는 경험까지. 브랜드의 품격을 공간의 스케일과 재료, 빛으로 구현합니다.</p>
-<a href="#contact">프로젝트 상담하기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+<h3>더 아트리움 그랜드 호텔</h3>
+<p>그랜드 로비부터 라운지와 다이닝까지, 석재와 브론즈의 일관된 디테일로 환대의 경험을 설계한 호텔 프로젝트입니다.</p>
+<a class="project-link" href="./project-hospitality.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
 <path d="M5 12h14">
 </path>
 <path d="m12 5 7 7-7 7">
@@ -217,18 +230,18 @@
 </div>
 </article>
 <article class="space-card space-card--wide">
-<div class="space-image-wrap">
+<a class="space-image-wrap project-card-link" href="./project-architecture.html" aria-label="해온 코스탈 리조트 프로젝트 상세 보기">
 <img src="./images/architecture-hotel.jpg" alt="해안 도시의 대규모 현대식 호텔 및 복합시설 건축물 외관" class="space-image"/>
 <span class="image-corner" aria-hidden="true">YISO / <!-- -->03</span>
-</div>
+</a>
 <div class="space-copy">
 <div class="space-meta">
 <span>03</span>
 <span>ARCHITECTURE</span>
 </div>
-<h3>도시의 인상을 만드는 건축</h3>
-<p>대지와 구조, 외관과 내부 동선을 하나의 논리로 연결합니다. 건축과 인테리어가 같은 기준을 향할 때 프로젝트의 완성도가 달라집니다.</p>
-<a href="#contact">프로젝트 상담하기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+<h3>해온 코스탈 리조트</h3>
+<p>해안의 수평선과 두 개의 건축 매스, 깊은 처마와 소나무 조경을 연결해 도시의 인상을 만든 대형 리조트 프로젝트입니다.</p>
+<a class="project-link" href="./project-architecture.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
 <path d="M5 12h14">
 </path>
 <path d="m12 5 7 7-7 7">
@@ -333,102 +346,13 @@
 <div class="contact-intro">
 <p class="contact-kicker">START A PROJECT WITH YISO</p>
 <h2>당신의 다음 공간은<br/><em>어떤 모습인가요?</em></h2>
-<p class="contact-lead">프로젝트의 규모와 목적을 알려주세요. 내용을 검토한 뒤 YISO 담당자가 직접 연락드립니다.</p>
 </div>
-
-<form class="project-form" id="project-form" action="https://formsubmit.co/yiso_design@naver.com" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="_subject" value="[YISO] 새 프로젝트 문의가 접수되었습니다"/>
-<input type="hidden" name="_template" value="table"/>
-<input type="hidden" name="_captcha" value="false"/>
-<input type="hidden" name="_next" id="form-next" value=""/>
-<input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true"/>
-
-<div class="form-head">
-<div>
-<span>PROJECT BRIEF</span>
-<h3>프로젝트 정보를 남겨주세요.</h3>
-</div>
-<p><strong>*</strong> 필수 입력</p>
-</div>
-
-<div class="form-grid">
-<label class="form-field">
-<span>성함 <b>*</b></span>
-<input type="text" name="성함" placeholder="성함을 입력해주세요" autocomplete="name" required/>
-</label>
-<label class="form-field">
-<span>회사명</span>
-<input type="text" name="회사명" placeholder="회사 또는 브랜드명 (선택)" autocomplete="organization"/>
-</label>
-<label class="form-field">
-<span>연락처 <b>*</b></span>
-<input type="tel" name="연락처" placeholder="010-0000-0000" autocomplete="tel" inputmode="tel" required/>
-</label>
-<label class="form-field">
-<span>이메일 <b>*</b></span>
-<input type="email" name="email" placeholder="example@company.com" autocomplete="email" required/>
-</label>
-<label class="form-field form-field--wide">
-<span>프로젝트 위치 <b>*</b></span>
-<input type="text" name="프로젝트 위치" placeholder="예: 부산광역시 해운대구" required/>
-</label>
-<label class="form-field">
-<span>프로젝트 유형 <b>*</b></span>
-<select name="프로젝트 유형" required>
-<option value="" selected disabled>유형을 선택해주세요</option>
-<option>호텔 · 숙박시설</option>
-<option>대형 상업시설</option>
-<option>오피스 · 업무공간</option>
-<option>고급 주거</option>
-<option>전시 · 공공공간</option>
-<option>건축 · 복합시설</option>
-<option>기타</option>
-</select>
-</label>
-<label class="form-field">
-<span>예상 공사 규모 <b>*</b></span>
-<select name="예상 공사 규모" required>
-<option value="" selected disabled>예산 범위를 선택해주세요</option>
-<option>1억원 미만</option>
-<option>1억원 ~ 3억원</option>
-<option>3억원 ~ 5억원</option>
-<option>5억원 ~ 10억원</option>
-<option>10억원 이상</option>
-<option>아직 미정 · 협의 필요</option>
-</select>
-</label>
-<label class="form-field form-field--wide">
-<span>공사 예정 시기</span>
-<input type="text" name="공사 예정 시기" placeholder="예: 2026년 11월 / 일정 협의 가능"/>
-</label>
-<label class="form-field form-field--wide form-field--message">
-<span>프로젝트 내용 <b>*</b></span>
-<textarea name="프로젝트 내용" rows="6" placeholder="공간의 용도, 규모, 원하는 방향, 현재 진행 단계 등 프로젝트에 대해 자유롭게 적어주세요." required></textarea>
-</label>
-<label class="form-field form-field--wide form-file-field">
-<span>도면 · 현장사진 · 참고자료</span>
-<input type="file" id="project-file" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.zip"/>
-<span class="file-ui"><span id="file-name">파일 선택</span><small>PDF · JPG · PNG · ZIP / 최대 10MB</small></span>
-</label>
-</div>
-
-<div class="form-consent">
-<label>
-<input type="checkbox" name="개인정보 수집 동의" value="동의함" required/>
-<span class="checkmark" aria-hidden="true"></span>
-<span>프로젝트 상담을 위한 개인정보 수집 및 이용에 동의합니다. <b>*</b></span>
-</label>
-<p>수집 항목: 성함, 연락처, 이메일 및 문의 내용 · 이용 목적: 프로젝트 상담 및 회신</p>
-</div>
-
-<button class="form-submit" type="submit">
-<span>PROJECT INQUIRY</span>
+<a class="contact-button" href="./inquiry.html">
 <span>프로젝트 문의하기</span>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>
 </svg>
-</button>
-</form>
+</a>
 
 <div class="contact-bottom">
 <a href="mailto:yiso_design@naver.com">
@@ -459,39 +383,5 @@
 </div>
 </footer>
 </main>
-<script>
-(function(){
-  var form=document.getElementById('project-form');
-  var next=document.getElementById('form-next');
-  var file=document.getElementById('project-file');
-  var fileName=document.getElementById('file-name');
-  if(next){
-    try{ next.value=new URL('./thanks.html', window.location.href).href; }catch(e){}
-  }
-  if(file && fileName){
-    file.addEventListener('change',function(){
-      if(this.files && this.files[0]){
-        var selected=this.files[0];
-        if(selected.size>10*1024*1024){
-          alert('첨부파일은 10MB 이하로 업로드해주세요.');
-          this.value='';
-          fileName.textContent='파일 선택';
-          return;
-        }
-        fileName.textContent=selected.name;
-      }else{
-        fileName.textContent='파일 선택';
-      }
-    });
-  }
-  if(form){
-    form.addEventListener('submit',function(){
-      if(next){
-        try{ next.value=new URL('./thanks.html', window.location.href).href; }catch(e){}
-      }
-    });
-  }
-})();
-</script>
 </body>
 </html>
