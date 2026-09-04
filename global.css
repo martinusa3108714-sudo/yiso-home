@@ -1,0 +1,169 @@
+:root{
+  --yiso-ink:#11110f;
+  --yiso-paper:#f1f0eb;
+  --yiso-signal:#f12a0f;
+  --yiso-emphasis:#cf2d1b;
+  --yiso-emphasis-on-dark:#ff4a32;
+  --yiso-white:#fff;
+}
+
+.global-header{
+  position:absolute;
+  z-index:50;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:96px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:clamp(1.5rem,4vw,5rem);
+  padding:0 4.2vw;
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.28);
+}
+
+.global-brand,
+.footer-brand,
+.footer-wordmark,
+.archive-footer>a{
+  position:relative;
+  display:inline-block;
+  width:max-content;
+  letter-spacing:-.08em;
+  font-weight:800;
+  line-height:.75;
+}
+
+.global-brand{font-size:clamp(1.75rem,2.4vw,2.35rem)}
+.global-brand .brand-reg,
+.footer-brand .brand-reg,
+.footer-wordmark .brand-reg,
+.archive-footer>a .brand-reg{
+  position:absolute;
+  top:-.05em;
+  right:-.72em;
+  color:var(--yiso-signal);
+  font-size:.16em;
+  letter-spacing:0;
+}
+
+.global-nav{
+  justify-self:center;
+  display:flex;
+  align-items:center;
+  gap:clamp(1.25rem,2.7vw,3.1rem);
+  font-size:.72rem;
+  font-weight:750;
+  letter-spacing:.12em;
+  white-space:nowrap;
+}
+
+.global-inquiry{
+  position:relative;
+  justify-self:end;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.25rem 0;
+  font-size:.72rem;
+  font-weight:750;
+  letter-spacing:.12em;
+  white-space:nowrap;
+  transition:opacity .2s ease;
+}
+.global-inquiry::before{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-.6rem;
+  width:0;
+  height:2px;
+  background:var(--yiso-signal);
+  transition:width .25s ease;
+}
+.global-inquiry::after{content:"↗";font-size:.95em;letter-spacing:0}
+.global-inquiry:hover{opacity:.62}
+.global-inquiry:hover::before,
+.global-inquiry:focus-visible::before,
+.global-inquiry.is-current::before{width:100%}
+
+.global-nav a{position:relative;padding:.25rem 0;transition:opacity .2s ease}
+.global-nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-.6rem;
+  width:0;
+  height:2px;
+  background:var(--yiso-signal);
+  transition:width .25s ease;
+}
+.global-nav a:hover{opacity:.62}
+.global-nav a:hover::after,
+.global-nav a:focus-visible::after,
+.global-nav a.is-current::after{width:100%}
+
+.text-highlight{
+  display:inline;
+  margin:0;
+  padding:0;
+  border:0;
+  background:none;
+  color:var(--yiso-emphasis);
+  font:inherit;
+  font-style:normal;
+  font-weight:inherit;
+  line-height:inherit;
+  letter-spacing:inherit;
+  text-decoration-line:underline;
+  text-decoration-color:currentColor;
+  text-decoration-thickness:clamp(2px,.025em,3px);
+  text-underline-offset:.12em;
+  text-decoration-skip-ink:auto;
+  vertical-align:baseline;
+  white-space:normal;
+}
+
+.contact .text-highlight,
+.process-proof .text-highlight{color:var(--yiso-emphasis-on-dark)}
+
+.hero-outline{
+  display:inline-block;
+  color:rgba(255,255,255,.24);
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:clamp(1px,.11vw,1.7px) rgba(255,255,255,.92);
+  font:inherit;
+  font-style:normal;
+  font-weight:inherit;
+  line-height:inherit;
+  letter-spacing:inherit;
+}
+
+.footer-brand .brand-reg,
+.footer-wordmark .brand-reg,
+.archive-footer>a .brand-reg{font-size:.1em;right:-.8em}
+
+@media(max-width:900px){
+  .global-header{min-height:82px;padding:0 1.4rem;gap:1.2rem}
+  .global-nav{gap:clamp(.75rem,2.6vw,1.5rem);font-size:.62rem;letter-spacing:.08em}
+  .global-inquiry{font-size:.62rem;letter-spacing:.08em}
+}
+
+@media(max-width:600px){
+  .global-header{min-height:74px;gap:.65rem;padding:0 .85rem}
+  .global-brand{font-size:1.48rem}
+  .global-nav{gap:.6rem;font-size:.5rem;letter-spacing:.02em}
+  .global-inquiry{gap:.25rem;font-size:.5rem;letter-spacing:.02em}
+  .global-nav a::after{bottom:-.42rem;height:1px}
+  .global-inquiry::before{bottom:-.42rem;height:1px}
+}
+
+@media(max-width:390px){
+  .global-header{padding:0 .65rem;gap:.45rem}
+  .global-brand{font-size:1.34rem}
+  .global-nav{gap:.42rem;font-size:.46rem}
+  .global-inquiry{font-size:.46rem}
+}
+
+@media(prefers-reduced-motion:reduce){.global-nav a::after{transition:none}}

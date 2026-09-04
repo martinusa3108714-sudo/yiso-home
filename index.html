@@ -21,36 +21,27 @@
 .space-copy .project-link svg{width:1rem;height:1rem;transition:transform .2s ease}
 .space-copy .project-link:hover svg,.space-copy .project-link:focus-visible svg{transform:translateX(4px)}
 .project-card-link:focus-visible,.space-copy .project-link:focus-visible{outline:2px solid #f12a0f;outline-offset:4px}
+.all-spaces-wrap{display:flex;justify-content:flex-end;margin-top:clamp(4rem,8vw,8rem);padding-top:1.4rem;border-top:1px solid rgba(17,17,17,.24)}
+.all-spaces-link{display:inline-flex;align-items:center;justify-content:space-between;gap:4rem;min-width:min(100%,24rem);padding:1.5rem 1.7rem;background:#151513;color:#f3f0e9;font-size:.78rem;font-weight:800;text-transform:uppercase;transition:transform .25s ease,background .25s ease}
+.all-spaces-link svg{width:1.1rem;height:1.1rem;transition:transform .25s ease}.all-spaces-link:hover,.all-spaces-link:focus-visible{background:#292923;transform:translateY(-3px)}.all-spaces-link:hover svg{transform:translate(3px,-3px)}
 .contact{background:#151513;color:#f3f0e9;min-height:88vh;padding-top:clamp(7rem,10vw,10rem)}
 .contact-grid{opacity:.1;background-image:linear-gradient(rgba(243,240,233,.34) 1px,transparent 1px),linear-gradient(90deg,rgba(243,240,233,.34) 1px,transparent 1px)}
 .contact-kicker{color:#f12a0f}
 .contact h2{letter-spacing:0;max-width:12ch;margin-bottom:clamp(3.5rem,6vw,6rem)}
-.contact h2 em{color:#aaa69d;letter-spacing:0}
 .contact-button{background:#f3f0e9;color:#151513;border:1px solid #f3f0e9}
 .contact-button:hover,.contact-button:focus-visible{background:transparent;color:#f3f0e9;border-color:#f12a0f;transform:translateY(-4px)}
 .contact-bottom{border-color:rgba(243,240,233,.28);color:rgba(243,240,233,.72)}
+.manifesto h2 .text-highlight,.standard-head h2 .text-highlight,.contact h2 .text-highlight{font-family:inherit;font-style:normal;font-weight:inherit;letter-spacing:inherit}
 </style>
+<link rel="stylesheet" href="./global.css"/>
 </head>
 <body>
 <main>
 <a class="skip-link" href="#content">본문으로 바로가기</a>
-<header class="site-header" aria-label="주요 메뉴">
-<a class="brand" href="#top" aria-label="YISO INTERIOR 홈">
-<span>YISO</span>
-<span>INTERIOR</span>
-</a>
-<nav class="desktop-nav" aria-label="페이지 내 이동">
-<a href="#philosophy">ABOUT</a>
-<a href="#spaces">SPACES</a>
-<a href="#process">PROCESS</a>
-</nav>
-<a class="header-contact" href="./inquiry.html">PROJECT INQUIRY <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
-<path d="M7 7h10v10">
-</path>
-<path d="M7 17 17 7">
-</path>
-</svg>
-</a>
+<header class="global-header" aria-label="주요 메뉴">
+  <a class="global-brand" href="./index.html" aria-label="YISO INTERIOR 홈" aria-current="page">YISO<span class="brand-reg">®</span></a>
+  <nav class="global-nav" aria-label="주요 페이지"><a href="./about.html">ABOUT</a><a href="./process.html">PROCESS</a><a href="./spaces.html">PROJECT</a></nav>
+  <a class="global-inquiry" href="./contact.html">PROJECT INQUIRY</a>
 </header>
 <section class="hero" id="top" aria-labelledby="hero-title">
 <div class="hero-image" role="img" aria-label="YISO INTERIOR가 제안하는 하이엔드 공간">
@@ -94,7 +85,7 @@
 <div class="manifesto-copy">
 <p class="eyebrow">BEYOND BEAUTIFUL</p>
 <h2>예쁜 공간은 많습니다.<br/>
-<em>오래 믿을 수 있는 공간은 드뭅니다.</em>
+<mark class="text-highlight">오래 믿을 수 있는 공간은 드뭅니다.</mark>
 </h2>
 <div class="manifesto-detail">
 <div class="red-line">
@@ -176,6 +167,7 @@
 </div>
 </article>
 </div>
+<div class="all-spaces-wrap"><a class="all-spaces-link" href="./spaces.html"><span>VIEW ALL SPACES / 15</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div>
 </section>
 <section class="spaces section-shell" id="spaces">
 <div class="section-label section-label--dark">
@@ -259,7 +251,7 @@
 <p>THE YISO STANDARD</p>
 </div>
 <h2>디자인보다 먼저,<br/>
-<em>기준을 설계합니다.</em>
+<mark class="text-highlight">기준을 설계합니다.</mark>
 </h2>
 </div>
 <div class="standard-list section-shell">
@@ -345,9 +337,9 @@
 <div class="contact-grid" aria-hidden="true"></div>
 <div class="contact-intro">
 <p class="contact-kicker">START A PROJECT WITH YISO</p>
-<h2>당신의 다음 공간은<br/><em>어떤 모습인가요?</em></h2>
+<h2>당신의 다음 공간은<br/><mark class="text-highlight">어떤 모습인가요?</mark></h2>
 </div>
-<a class="contact-button" href="./inquiry.html">
+<a class="contact-button" href="./contact.html">
 <span>프로젝트 문의하기</span>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>
@@ -365,7 +357,7 @@
 </section>
 </div>
 <footer>
-<a class="footer-brand" href="#top">YISO<span>®</span>
+<a class="footer-brand" href="#top">YISO<span class="brand-reg">®</span>
 </a>
 <div>
 <p>YISO INTERIOR</p>
