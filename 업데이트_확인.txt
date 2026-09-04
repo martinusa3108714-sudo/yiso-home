@@ -1,0 +1,16 @@
+YISO INTERIOR 업데이트 확인 파일
+
+버전: RED EMPHASIS V4 / 2026-09-04
+
+이 압축본에는 아래 변경사항이 포함되어 있습니다.
+
+1. 공통 헤더: 왼쪽 YISO® / 가운데 ABOUT·PROCESS·PROJECT / 오른쪽 PROJECT INQUIRY
+2. 독립 페이지: about.html / spaces.html / process.html / contact.html
+3. 상단·하단 로고: YISO® 워드마크로 통일
+4. 강조 문구: 배경 없이 동일 서체의 레드 글자색과 얇은 밑줄로 강조
+5. 프로젝트: 15개 상세 페이지, 프로젝트별 고해상도 이미지 9장
+6. 프로젝트 목록: 기존 비대칭 배치로 복원
+
+압축을 푼 뒤 이 파일과 같은 폴더의 index.html을 열어주세요.
+기존 YISO_INTERIOR_HTML 폴더에 겹쳐 풀지 말고,
+새로 생성되는 YISO_INTERIOR_RED_EMPHASIS_V4_20260904 폴더에서 확인해주세요.
