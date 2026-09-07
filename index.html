@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="YISO INTERIOR">
-<meta property="og:title" content="YISO INTERIOR | 공간의 기준을 설계합니다">
-<meta property="og:description" content="공간을 말보다 먼저, 당신을 설명합니다.">
-<meta property="og:url" content="https://yiso.or.kr/">
-<meta property="og:image" content="https://yiso.or.kr/images/kakaotalk-preview.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/png">
 <meta charSet="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="preload" href="./images/residential-large.jpg" as="image"/>
@@ -19,6 +10,17 @@
 <link rel="stylesheet" href="./assets/index-Pz6LRWvi.css" data-rsc-css-href="./assets/index-Pz6LRWvi.css" data-precedence="vite-rsc/importer-resources"/>
 <title>YISO INTERIOR | 공간의 기준을 설계합니다</title>
 <meta name="description" content="부산·양산을 중심으로 주거, 상업, 오피스, 전시, 공공 공간을 설계하고 시공하는 YISO INTERIOR입니다."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="YISO INTERIOR"/>
+<meta property="og:title" content="YISO INTERIOR | 공간의 기준을 설계합니다"/>
+<meta property="og:description" content="공간을 말보다 먼저, 당신을 설명합니다."/>
+<meta property="og:url" content="https://yiso.or.kr/"/>
+<meta property="og:image" content="https://yiso.or.kr/images/kakaotalk-preview.png"/>
+<meta property="og:image:secure_url" content="https://yiso.or.kr/images/kakaotalk-preview.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:alt" content="YISO INTERIOR — 공간의 기준을 설계합니다"/>
 <link rel="shortcut icon" href="./favicon.svg"/>
 <link rel="icon" href="./favicon.svg"/>
 <style>
@@ -31,8 +33,18 @@
 .space-copy .project-link:hover svg,.space-copy .project-link:focus-visible svg{transform:translateX(4px)}
 .project-card-link:focus-visible,.space-copy .project-link:focus-visible{outline:2px solid #f12a0f;outline-offset:4px}
 .all-spaces-wrap{display:flex;justify-content:flex-end;margin-top:clamp(4rem,8vw,8rem);padding-top:1.4rem;border-top:1px solid rgba(17,17,17,.24)}
-.all-spaces-link{display:inline-flex;align-items:center;justify-content:space-between;gap:4rem;min-width:min(100%,24rem);padding:1.5rem 1.7rem;background:#151513;color:#f3f0e9;font-size:.78rem;font-weight:800;text-transform:uppercase;transition:transform .25s ease,background .25s ease}
-.all-spaces-link svg{width:1.1rem;height:1.1rem;transition:transform .25s ease}.all-spaces-link:hover,.all-spaces-link:focus-visible{background:#292923;transform:translateY(-3px)}.all-spaces-link:hover svg{transform:translate(3px,-3px)}
+.all-spaces-link{display:inline-flex;align-items:center;justify-content:space-between;gap:4rem;min-width:min(100%,24rem);padding:1.5rem 1.7rem;border:1px solid #f3f0e9;background:#f3f0e9;color:#151513;font-size:.78rem;font-weight:800;text-transform:uppercase;white-space:nowrap;transition:transform .25s ease,background .25s ease,color .25s ease,border-color .25s ease}
+.all-spaces-link svg{width:1.1rem;height:1.1rem;transition:transform .25s ease}.all-spaces-link:hover,.all-spaces-link:focus-visible{border-color:#f12a0f;background:transparent;color:#f3f0e9;transform:translateY(-4px)}.all-spaces-link:hover svg,.all-spaces-link:focus-visible svg{transform:translate(3px,-3px)}
+.space-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,2.5vw,2.5rem);align-items:stretch}
+.space-card,.space-card--portrait,.space-card--landscape,.space-card--wide{grid-column:auto;margin-top:0;display:flex;flex-direction:column;gap:0;min-width:0;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#1d1d1b;transition:border-color .35s ease,background-color .35s ease}
+.space-card:hover{border-color:rgba(241,42,15,.72);background:#20201d}
+.space-card--portrait .space-image-wrap,.space-card--landscape .space-image-wrap,.space-card--wide .space-image-wrap{width:100%;aspect-ratio:4/3}
+.space-copy{flex:1;display:flex;flex-direction:column;grid-template-columns:none;align-items:stretch;gap:0;padding:1.25rem 1.3rem 1.5rem;border-top:0}
+.space-meta{flex-direction:row;justify-content:space-between;gap:1rem;padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.18)}
+.space-card .space-copy h3{margin:1.2rem 0 0;font-size:clamp(1.45rem,1.8vw,2rem)}
+.space-copy>p,.space-copy>a{grid-column:auto}
+.space-copy>p{max-width:none;margin:1rem 0 1.65rem}
+.space-copy .project-link{margin-top:auto}
 .contact{background:#151513;color:#f3f0e9;min-height:88vh;padding-top:clamp(7rem,10vw,10rem)}
 .contact-grid{opacity:.1;background-image:linear-gradient(rgba(243,240,233,.34) 1px,transparent 1px),linear-gradient(90deg,rgba(243,240,233,.34) 1px,transparent 1px)}
 .contact-kicker{color:#f12a0f}
@@ -41,6 +53,8 @@
 .contact-button:hover,.contact-button:focus-visible{background:transparent;color:#f3f0e9;border-color:#f12a0f;transform:translateY(-4px)}
 .contact-bottom{border-color:rgba(243,240,233,.28);color:rgba(243,240,233,.72)}
 .manifesto h2 .text-highlight,.standard-head h2 .text-highlight,.contact h2 .text-highlight{font-family:inherit;font-style:normal;font-weight:inherit;letter-spacing:inherit}
+@media(max-width:900px){.space-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.space-list{display:grid;grid-template-columns:1fr;gap:2rem}.space-card,.space-card--portrait,.space-card--landscape,.space-card--wide{grid-column:auto;margin-top:0}.space-card--portrait .space-image-wrap,.space-card--landscape .space-image-wrap,.space-card--wide .space-image-wrap{aspect-ratio:4/3}.space-copy{display:flex;grid-template-columns:none;padding:1.15rem}}
 </style>
 <link rel="stylesheet" href="./global.css"/>
 </head>
@@ -48,7 +62,7 @@
 <main>
 <a class="skip-link" href="#content">본문으로 바로가기</a>
 <header class="global-header" aria-label="주요 메뉴">
-  <a class="global-brand" href="./index.html" aria-label="YISO INTERIOR 홈" aria-current="page">YISO<span class="brand-reg">®</span></a>
+  <a class="global-brand" href="./index.html" aria-label="YISO INTERIOR 홈" aria-current="page">YISO</a>
   <nav class="global-nav" aria-label="주요 페이지"><a href="./about.html">ABOUT</a><a href="./process.html">PROCESS</a><a href="./spaces.html">PROJECT</a></nav>
   <a class="global-inquiry" href="./contact.html">PROJECT INQUIRY</a>
 </header>
@@ -384,5 +398,6 @@
 </div>
 </footer>
 </main>
+<script src="./site-motion.js"></script>
 </body>
 </html>

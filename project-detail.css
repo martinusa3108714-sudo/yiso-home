@@ -60,8 +60,8 @@ body.project-page button{font:inherit}
   padding:9rem 4.2vw 4.2vw;
 }
 .project-kicker{margin:0 0 1.1rem;color:var(--project-signal);font-size:.75rem;font-weight:900;text-transform:uppercase}
-.project-hero h1{max-width:12ch;margin:0;font-size:clamp(3.3rem,8.4vw,8.8rem);font-weight:700;line-height:.92;word-break:keep-all}
-.project-hero h1 span{display:block;margin-top:.75rem;font-size:clamp(.92rem,1.25vw,1.25rem);font-weight:600;line-height:1.35;text-transform:uppercase}
+.project-hero h1{max-width:12ch;margin:0;font-size:clamp(3.3rem,8.4vw,8.8rem);font-weight:700;line-height:.92;word-break:keep-all;text-wrap:balance}
+.project-hero h1 span{display:block;margin-top:.75rem;font-size:clamp(.92rem,1.25vw,1.25rem);font-weight:600;line-height:1.35;text-transform:uppercase;overflow-wrap:anywhere}
 .project-hero-bottom{display:grid;grid-template-columns:1fr minmax(18rem,32rem);gap:3rem;align-items:end;margin-top:clamp(2.8rem,7vh,6rem);padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.34)}
 .project-hero-bottom p{margin:0;color:rgba(255,255,255,.74);font-size:.94rem;line-height:1.8;word-break:keep-all}
 .project-scroll{justify-self:end;display:flex;align-items:center;gap:.65rem;font-size:.68rem;font-weight:800;text-transform:uppercase}
@@ -97,7 +97,7 @@ body.project-page button{font:inherit}
 .next-project:hover img{transform:scale(1.018)}
 .next-project-content{width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.38)}
 .next-project-content p{margin:0 0 .6rem;color:var(--project-signal);font-size:.7rem;font-weight:900;text-transform:uppercase}
-.next-project-content h2{margin:0;font-size:clamp(2.35rem,5.4vw,6rem);font-weight:600;line-height:1}
+.next-project-content h2{margin:0;font-size:clamp(2.35rem,5.4vw,6rem);font-weight:600;line-height:1;word-break:keep-all;text-wrap:balance}
 .next-project-content svg{width:clamp(2.5rem,5vw,5rem);height:auto}
 
 .project-footer{min-height:20rem!important;display:grid!important;grid-template-columns:2fr 1fr 1fr!important;align-items:end!important;gap:3rem!important;padding:5rem 4.2vw 3rem!important;background:#080808!important;color:#fff!important}
@@ -135,18 +135,25 @@ body.project-page button{font:inherit}
   .project-header{min-height:74px}
   .project-inquiry{font-size:0;gap:0}
   .project-inquiry svg{width:1.1rem;height:1.1rem}
-  .project-hero h1{font-size:clamp(3rem,15vw,4.7rem)}
+  .project-hero-content{padding-top:9rem}
+  .project-hero h1{font-size:clamp(2.65rem,12vw,4.2rem)}
   .project-meta div{min-height:7.5rem}
   .project-gallery-head{align-items:flex-start}
   .project-gallery-grid{grid-template-columns:1fr}
   .next-project{min-height:52svh}
-  .next-project-content h2{font-size:2.4rem}
+  .next-project-content{display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .next-project-content h2{font-size:clamp(1.8rem,8.5vw,2.4rem)}
   .project-footer{grid-template-columns:1fr!important;min-height:28rem!important}
   .project-footer .footer-wordmark{grid-column:auto;font-size:5.5rem}
   .project-footer>div:last-child{align-items:flex-start!important;text-align:left!important}
   .lightbox{width:calc(100vw - 16px);height:calc(100svh - 16px)}
   .lightbox-stage{padding:3.8rem .75rem}
   .lightbox-arrow{top:auto;bottom:.85rem;transform:none}
+}
+
+@media (max-width:480px){
+  .project-meta{grid-template-columns:1fr}
+  .project-meta div{min-height:6.8rem}
 }
 
 @media (prefers-reduced-motion:reduce){

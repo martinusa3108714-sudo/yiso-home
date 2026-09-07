@@ -1,16 +1,23 @@
 YISO INTERIOR 업데이트 확인 파일
 
-버전: RED EMPHASIS V4 / 2026-09-04
+버전: FINAL V5.3 / 2026-09-07
 
 이 압축본에는 아래 변경사항이 포함되어 있습니다.
 
-1. 공통 헤더: 왼쪽 YISO® / 가운데 ABOUT·PROCESS·PROJECT / 오른쪽 PROJECT INQUIRY
+1. 공통 헤더: 왼쪽 YISO / 가운데 ABOUT·PROCESS·PROJECT / 오른쪽 PROJECT INQUIRY
 2. 독립 페이지: about.html / spaces.html / process.html / contact.html
-3. 상단·하단 로고: YISO® 워드마크로 통일
+3. 로고: 상단 YISO는 등록상표 기호 제거, 하단 YISO®는 등록상표 기호 유지
 4. 강조 문구: 배경 없이 동일 서체의 레드 글자색과 얇은 밑줄로 강조
 5. 프로젝트: 15개 상세 페이지, 프로젝트별 고해상도 이미지 9장
-6. 프로젝트 목록: 기존 비대칭 배치로 복원
+6. 프로젝트 목록: 이미지와 설명을 하나로 묶은 카드형 갤러리로 정리 (PC 3열 / 태블릿 2열 / 모바일 1열)
+7. 카카오톡 미리보기: images/kakaotalk-preview.png 경로로 연결
+8. 반응형: 모바일 헤더, 버튼 줄바꿈, 주요 제목 크기와 프로젝트 메타 영역 정리
+9. 모션: 섹션 배경은 고정하고 내부 글·숫자·카드만 부드럽게 나타나는 공통 애니메이션 적용
+10. CTA: VIEW ALL SPACES 버튼 가독성 강화, ABOUT·PROCESS 하단 배경을 화면 전체 너비로 확장
+11. 프로젝트 목록: 긴 섹션에서도 애니메이션과 관계없이 콘텐츠가 항상 표시되도록 수정
+12. PC 글자 크기: 주요 제목과 하단 워드마크를 15~25% 축소하고 줄바꿈 기준 재정리
+13. 스크롤 감각: PC 마우스 휠에 부드러운 관성 스크롤 적용, 모바일 터치 스크롤은 기본 관성 유지
 
 압축을 푼 뒤 이 파일과 같은 폴더의 index.html을 열어주세요.
 기존 YISO_INTERIOR_HTML 폴더에 겹쳐 풀지 말고,
-새로 생성되는 YISO_INTERIOR_RED_EMPHASIS_V4_20260904 폴더에서 확인해주세요.
+새로 생성되는 YISO_INTERIOR_FINAL_V5_3_20260907 폴더에서 확인해주세요.

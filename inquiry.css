@@ -144,7 +144,8 @@ body.inquiry-page *{box-sizing:border-box}
   .inquiry-mail{font-size:0}
   .inquiry-mail::after{content:"MAIL";font-size:.68rem}
   .inquiry-hero{min-height:76svh}
-  .inquiry-hero h1{font-size:clamp(3.8rem,19vw,5.5rem)}
+  .inquiry-hero-content{padding-top:9rem}
+  .inquiry-hero h1{font-size:clamp(3rem,14vw,4.75rem)}
   .inquiry-form-grid{grid-template-columns:1fr}
   .form-field--wide{grid-column:auto}
   .form-top{align-items:flex-start;flex-direction:column}
@@ -155,6 +156,8 @@ body.inquiry-page *{box-sizing:border-box}
   .inquiry-footer>div:last-child{align-items:flex-start!important;text-align:left!important}
   .thanks-header{padding:0 1.4rem}
   .thanks-shell{padding-left:1.4rem;padding-right:1.4rem}
+  .thanks-shell h1{font-size:clamp(2.9rem,13vw,4.8rem)}
+  .aside-contact{max-width:100%;overflow-wrap:anywhere}
 }
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
