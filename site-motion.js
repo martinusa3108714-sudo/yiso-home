@@ -304,3 +304,173 @@
   window.addEventListener("pointerdown", cancelInertia, { passive: true });
   window.addEventListener("touchstart", cancelInertia, { passive: true });
 })();
+
+/* V5.8 — a restrained cinematic interface shared by every page. */
+(() => {
+  const root = document.documentElement;
+  const body = document.body;
+  if (!body || body.dataset.yisoEnhanced === "true") return;
+
+  body.dataset.yisoEnhanced = "true";
+  root.classList.add("yiso-design-ready");
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  const pageName = body.classList.contains("about-page")
+    ? "ABOUT"
+    : body.classList.contains("process-page")
+      ? "PROCESS"
+      : body.classList.contains("spaces-page")
+        ? "PROJECT"
+        : body.classList.contains("project-page")
+          ? "PROJECT DETAIL"
+          : body.classList.contains("inquiry-page")
+            ? "PROJECT INQUIRY"
+            : body.classList.contains("thanks-page")
+              ? "THANK YOU"
+              : "HOME";
+  body.dataset.yisoPage = pageName;
+
+  const progress = document.createElement("div");
+  progress.className = "yiso-scroll-progress";
+  progress.setAttribute("aria-hidden", "true");
+  const progressBar = document.createElement("span");
+  progress.append(progressBar);
+  body.append(progress);
+
+  const texture = document.createElement("div");
+  texture.className = "yiso-screen-texture";
+  texture.setAttribute("aria-hidden", "true");
+  body.append(texture);
+
+  const edgeLabel = document.createElement("div");
+  edgeLabel.className = "yiso-edge-label";
+  edgeLabel.setAttribute("aria-hidden", "true");
+  const edgePage = document.createElement("span");
+  edgePage.textContent = `YISO / ${pageName}`;
+  const edgeYear = document.createElement("span");
+  edgeYear.textContent = "BUSAN · 2026";
+  edgeLabel.append(edgePage, edgeYear);
+  body.append(edgeLabel);
+
+  const sectionSelector = [
+    ".manifesto",
+    ".numbers",
+    ".spaces",
+    ".standard-section",
+    ".process",
+    ".contact",
+    ".editorial-intro",
+    ".about-image-band",
+    ".numbers-panel",
+    ".values-section",
+    ".process-overview",
+    ".process-proof",
+    ".editorial-cta",
+    ".archive",
+    ".archive-contact",
+    ".project-intro",
+    ".project-gallery-section",
+    ".next-project",
+    ".inquiry-main"
+  ].join(",");
+
+  const sections = Array.from(document.querySelectorAll(sectionSelector));
+  sections.forEach((section, index) => {
+    section.classList.add("yiso-design-section");
+    const marker = document.createElement("span");
+    marker.className = "yiso-section-marker";
+    marker.setAttribute("aria-hidden", "true");
+    marker.textContent = String(index + 1).padStart(2, "0");
+    section.append(marker);
+  });
+
+  if (!("IntersectionObserver" in window) || reduceMotion) {
+    sections.forEach((section) => section.classList.add("design-in-view"));
+  } else {
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("design-in-view");
+        sectionObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    sections.forEach((section) => sectionObserver.observe(section));
+  }
+
+  const spotlightTargets = Array.from(document.querySelectorAll([
+    ".space-card",
+    ".archive-card-link",
+    ".gallery-item",
+    ".project-meta > div",
+    ".numbers-panel article",
+    ".values-grid article",
+    ".inquiry-step"
+  ].join(",")));
+
+  spotlightTargets.forEach((target) => {
+    if (target.querySelector(":scope > .yiso-card-light")) return;
+    const light = document.createElement("span");
+    light.className = "yiso-card-light";
+    light.setAttribute("aria-hidden", "true");
+    target.append(light);
+
+    if (!finePointer || reduceMotion) return;
+    target.addEventListener("pointermove", (event) => {
+      const bounds = target.getBoundingClientRect();
+      target.style.setProperty("--yiso-spot-x", `${event.clientX - bounds.left}px`);
+      target.style.setProperty("--yiso-spot-y", `${event.clientY - bounds.top}px`);
+    }, { passive: true });
+  });
+
+  let pointer;
+  if (finePointer && !reduceMotion) {
+    pointer = document.createElement("span");
+    pointer.className = "yiso-pointer";
+    pointer.setAttribute("aria-hidden", "true");
+    body.append(pointer);
+
+    let pointerFrame = 0;
+    let pointerX = -100;
+    let pointerY = -100;
+    let customCursorActive = false;
+    const paintPointer = () => {
+      pointer.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
+      pointerFrame = 0;
+    };
+    document.addEventListener("pointermove", (event) => {
+      if (!customCursorActive) {
+        root.classList.add("yiso-custom-cursor");
+        customCursorActive = true;
+      }
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      pointer.classList.add("is-active");
+      pointer.classList.toggle("is-interactive", Boolean(event.target instanceof Element && event.target.closest("a, button, input, textarea, .custom-select")));
+      if (!pointerFrame) pointerFrame = window.requestAnimationFrame(paintPointer);
+    }, { passive: true });
+    document.addEventListener("pointerleave", () => {
+      pointer.classList.remove("is-active", "is-interactive");
+      root.classList.remove("yiso-custom-cursor");
+      customCursorActive = false;
+    }, { passive: true });
+  }
+
+  const header = document.querySelector(".global-header");
+  let scrollFrame = 0;
+  const paintScroll = () => {
+    const maxScroll = Math.max(1, root.scrollHeight - window.innerHeight);
+    const ratio = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+    progressBar.style.transform = `scaleX(${ratio})`;
+    header?.classList.toggle("is-condensed", window.scrollY > 32);
+    scrollFrame = 0;
+  };
+  const requestScrollPaint = () => {
+    if (!scrollFrame) scrollFrame = window.requestAnimationFrame(paintScroll);
+  };
+
+  paintScroll();
+  window.addEventListener("scroll", requestScrollPaint, { passive: true });
+  window.addEventListener("resize", requestScrollPaint, { passive: true });
+})();
