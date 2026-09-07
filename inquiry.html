@@ -74,8 +74,14 @@
           <div class="form-section-head"><span>02</span><h3 id="project-info-title">프로젝트 정보</h3></div>
           <div class="inquiry-form-grid">
             <label class="form-field form-field--wide"><span class="field-name">프로젝트 위치 <b>*</b></span><input type="text" name="프로젝트 위치" placeholder="예: 부산광역시 해운대구" required/></label>
-            <label class="form-field"><span class="field-name">프로젝트 유형 <b>*</b></span><select name="프로젝트 유형" required><option value="" selected disabled>유형을 선택해주세요</option><option>호텔 · 숙박시설</option><option>대형 상업시설</option><option>오피스 · 업무공간</option><option>고급 주거</option><option>전시 · 공공공간</option><option>건축 · 복합시설</option><option>기타</option></select></label>
-            <label class="form-field"><span class="field-name">예상 공사 규모 <b>*</b></span><select name="예상 공사 규모" required><option value="" selected disabled>예산 범위를 선택해주세요</option><option>1억원 ~ 3억원</option><option>3억원 ~ 5억원</option><option>5억원 ~ 10억원</option><option>10억원 ~ 30억원</option><option>30억원 이상</option><option>아직 미정 · 협의 필요</option></select></label>
+            <div class="form-field">
+              <label class="field-name" for="project-type">프로젝트 유형 <b>*</b></label>
+              <select id="project-type" name="프로젝트 유형" data-custom-select required><option value="" selected disabled>유형을 선택해주세요</option><option>호텔 · 숙박시설</option><option>대형 상업시설</option><option>오피스 · 업무공간</option><option>고급 주거</option><option>전시 · 공공공간</option><option>건축 · 복합시설</option><option>기타</option></select>
+            </div>
+            <div class="form-field">
+              <label class="field-name" for="project-budget">예상 공사 규모 <b>*</b></label>
+              <select id="project-budget" name="예상 공사 규모" data-custom-select required><option value="" selected disabled>예산 범위를 선택해주세요</option><option>1억원 ~ 3억원</option><option>3억원 ~ 5억원</option><option>5억원 ~ 10억원</option><option>10억원 ~ 30억원</option><option>30억원 이상</option><option>아직 미정 · 협의 필요</option></select>
+            </div>
             <label class="form-field"><span class="field-name">공간 규모</span><input type="text" name="공간 규모" placeholder="예: 500평 / 연면적 1,650m²"/></label>
             <label class="form-field"><span class="field-name">공사 예정 시기</span><input type="text" name="공사 예정 시기" placeholder="예: 2027년 상반기 / 일정 협의 가능"/></label>
           </div>
