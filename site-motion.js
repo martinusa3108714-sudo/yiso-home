@@ -1,7 +1,7 @@
 (() => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const selectors = [
-    ".manifesto > .section-label",
+    ".manifesto-aside",
     ".manifesto-copy",
     ".numbers-intro",
     ".number-list article",
@@ -19,10 +19,12 @@
     ".contact-bottom",
     ".editorial-hero-inner",
     ".split-heading",
+    ".belief-rail",
     ".about-image-band > div",
     ".numbers-panel-head",
     ".numbers-panel article",
     ".values-head",
+    ".values-compass",
     ".values-grid article",
     ".process-overview-head",
     ".process-detail",
@@ -83,9 +85,87 @@
 
   window.setTimeout(() => {
     items.forEach((element) => {
-      if (!element.classList.contains("is-visible")) reveal(element);
+      const bounds = element.getBoundingClientRect();
+      const isNearViewport = bounds.top < window.innerHeight * 1.25 && bounds.bottom > -window.innerHeight * .25;
+      if (!element.classList.contains("is-visible") && isNearViewport) reveal(element);
     });
   }, 2500);
+})();
+
+(() => {
+  const counters = Array.from(document.querySelectorAll("[data-counter]"));
+  if (!counters.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const canAnimate = "requestAnimationFrame" in window && "IntersectionObserver" in window && !reduceMotion;
+
+  const valueNode = (counter) => counter.querySelector(".counter-value");
+  const showFinalValue = (counter) => {
+    const value = valueNode(counter);
+    if (!value) return;
+    value.textContent = counter.dataset.counter || value.textContent;
+    counter.classList.remove("is-counting");
+  };
+
+  if (!canAnimate) {
+    counters.forEach(showFinalValue);
+    return;
+  }
+
+  const runCounter = (counter) => {
+    if (counter.dataset.counterPlayed === "true") return;
+    counter.dataset.counterPlayed = "true";
+
+    const finalValue = counter.dataset.counter || "0";
+    const target = Number.parseInt(finalValue, 10);
+    const value = valueNode(counter);
+    if (!value || !Number.isFinite(target)) return;
+
+    const duration = 1250;
+    const digitCount = finalValue.length;
+    let startedAt = 0;
+    let lastRendered = -1;
+
+    counter.classList.add("is-counting");
+    value.textContent = String(0).padStart(digitCount, "0");
+
+    const frame = (time) => {
+      if (!startedAt) startedAt = time;
+      const elapsed = time - startedAt;
+      const progress = Math.min(1, elapsed / duration);
+
+      const current = Math.min(target, Math.floor(target * progress));
+      if (current !== lastRendered) {
+        value.textContent = String(current).padStart(digitCount, "0");
+        lastRendered = current;
+      }
+
+      if (progress < 1) {
+        window.requestAnimationFrame(frame);
+      } else {
+        showFinalValue(counter);
+      }
+    };
+
+    window.requestAnimationFrame(frame);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      runCounter(entry.target);
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: .35,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  counters.forEach((counter) => {
+    const value = valueNode(counter);
+    if (value) value.textContent = String(0).padStart((counter.dataset.counter || "0").length, "0");
+    observer.observe(counter);
+  });
 })();
 
 (() => {
