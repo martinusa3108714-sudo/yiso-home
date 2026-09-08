@@ -122,6 +122,14 @@
       optionButtons[safeIndex].focus({preventScroll:true});
     }
 
+    function placeMenu(){
+      var triggerBox=trigger.getBoundingClientRect();
+      var availableBelow=window.innerHeight-triggerBox.bottom;
+      var availableAbove=triggerBox.top;
+      var expectedHeight=Math.min(menu.scrollHeight,window.innerHeight*.48);
+      root.classList.toggle('opens-up',availableBelow<expectedHeight+12&&availableAbove>availableBelow);
+    }
+
     function open(preferredIndex){
       var initialIndex=typeof preferredIndex==='number'?preferredIndex:selectedButtonIndex();
       if(openDropdown&&openDropdown!==widget) openDropdown.close(false);
@@ -131,11 +139,15 @@
       menu.setAttribute('aria-hidden','false');
       openDropdown=widget;
       if(initialIndex<0) initialIndex=0;
-      window.requestAnimationFrame(function(){focusOption(initialIndex);});
+      window.requestAnimationFrame(function(){
+        placeMenu();
+        focusOption(initialIndex);
+      });
     }
 
     function close(returnFocus){
       root.classList.remove('is-open');
+      root.classList.remove('opens-up');
       field.classList.remove('is-dropdown-open');
       trigger.setAttribute('aria-expanded','false');
       menu.setAttribute('aria-hidden','true');
