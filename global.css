@@ -1649,8 +1649,8 @@ body::selection{background:var(--yiso-red);color:#fff}
 .gallery-item:hover{transform:translateY(-6px);box-shadow:0 24px 56px rgba(0,0,0,.35)}
 .gallery-item:hover::before{opacity:1;transform:none}
 .gallery-item::after{z-index:5;padding:.35rem .5rem;border-left:2px solid var(--yiso-red);background:rgba(0,0,0,.3)}
-.next-project::after{content:"";position:absolute;z-index:-1;inset:1.3rem;border:1px solid rgba(255,255,255,.17);pointer-events:none;transition:border-color .4s ease,inset .5s var(--yiso-ease)}
-.next-project:hover::after{inset:1rem;border-color:rgba(241,42,15,.55)}
+.next-project::after{content:"";position:absolute;z-index:-1;inset:0;border:2px solid transparent;pointer-events:none;transition:border-color .4s ease}
+.next-project:hover::after{inset:0;border-color:rgba(241,42,15,.68)}
 .lightbox{border:1px solid rgba(255,255,255,.14);border-radius:10px;box-shadow:0 30px 100px rgba(0,0,0,.72)}
 .lightbox-close,.lightbox-arrow{border-radius:50%;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:background-color .25s ease,border-color .25s ease,transform .25s ease}
 .lightbox-close:hover,.lightbox-arrow:hover{border-color:var(--yiso-red);background:rgba(241,42,15,.3)}
@@ -1761,7 +1761,7 @@ footer::before,.editorial-footer::before,.archive-footer::before,.project-footer
   .values-compass::before{inset:-.6rem}
   .process-proof-image{margin:1rem;border-radius:8px}
   .archive-hero::after{background-size:100% 25%,50% 100%,100% 100%}
-  .next-project::after{inset:.65rem}.next-project:hover::after{inset:.65rem}
+  .next-project::after{inset:0}.next-project:hover::after{inset:0}
   .inquiry-aside{padding-left:1rem}
   .inquiry-form{padding:1.15rem;border-radius:8px}
   .inquiry-form::before{right:.75rem}
@@ -1865,23 +1865,12 @@ body{
 .project-hero-content::after,
 .inquiry-hero-content::before,
 .inquiry-hero-content::after,
-.manifesto::before,
-.manifesto::after,
 .manifesto-copy::before,
-.numbers::before,
-.number-list article::after,
-.spaces::before,
-.standard-section::before,
-.process::after,
 .contact::before,
 .contact::after,
-.about-page .editorial-intro::before,
 .belief-rail::after,
-.about-image-band::before,
-.numbers-panel::before,
 .values-compass::before,
 .values-compass::after,
-.process-page .process-overview::after,
 .archive-hero::before,
 .archive-contact::before,
 .project-hero::before,
@@ -2061,4 +2050,475 @@ body{
   .manifesto-detail{grid-template-columns:1.75rem minmax(0,1fr);gap:.85rem}
   .manifesto-detail p{font-size:.92rem;line-height:1.82}
   .inquiry-form{padding:1rem .8rem}
+}
+
+/* V5.12 — restore the editorial typography and spatial accents requested
+   after the collision-safe V5.9 pass. Every ornament stays behind content. */
+.manifesto,
+.numbers,
+.spaces,
+.standard-section,
+.process,
+.about-page .editorial-intro,
+.numbers-panel,
+.process-page .process-overview{
+  isolation:isolate;
+}
+
+.manifesto > *,
+.numbers > *,
+.spaces > *,
+.standard-section > *,
+.process > *,
+.about-page .editorial-intro > *,
+.numbers-panel > *,
+.process-page .process-overview > *{
+  position:relative;
+  z-index:1;
+}
+
+/* Philosophy — TRUST and its architectural orbit. */
+.manifesto::before{
+  z-index:0;
+  left:clamp(-5rem,-2vw,1rem);
+  bottom:clamp(2rem,6vw,5rem);
+  width:clamp(20rem,34vw,37rem);
+  border-color:rgba(242,239,232,.14);
+  background:
+    radial-gradient(circle at center,var(--yiso-red) 0 .24rem,transparent .28rem),
+    linear-gradient(90deg,transparent calc(50% - .5px),rgba(242,239,232,.15) 50%,transparent calc(50% + .5px)),
+    linear-gradient(transparent calc(50% - .5px),rgba(242,239,232,.15) 50%,transparent calc(50% + .5px));
+  box-shadow:
+    inset 0 0 0 clamp(2rem,4vw,4rem) rgba(242,239,232,.014),
+    0 0 0 1.1rem rgba(241,42,15,.018),
+    0 0 100px rgba(241,42,15,.06);
+}
+.manifesto::after{
+  z-index:0;
+  left:6vw;
+  bottom:clamp(2.5rem,5vw,5rem);
+  font-size:clamp(9rem,20vw,21rem);
+  -webkit-text-stroke-color:rgba(242,239,232,.16);
+  text-shadow:0 0 50px rgba(241,42,15,.025);
+}
+
+/* Metrics — restore the large editorial labels behind each final number. */
+.numbers::before{
+  z-index:0;
+  -webkit-text-stroke-color:rgba(242,239,232,.095);
+}
+.number-list article::after{
+  z-index:0;
+  right:.35rem;
+  font-size:clamp(3.6rem,6.3vw,6.9rem);
+  -webkit-text-stroke-color:rgba(242,239,232,.14);
+}
+.number-list article > *{position:relative;z-index:1}
+.number-list article:hover::after{-webkit-text-stroke-color:rgba(241,42,15,.34)}
+
+/* Make all remaining ghost words visible without competing with content. */
+.spaces::before{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.10)}
+.standard-section::before{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.13)}
+.process::after{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.085)}
+.about-page .editorial-intro::before{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.10)}
+.numbers-panel::before{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.09)}
+.process-page .process-overview::after{z-index:0;-webkit-text-stroke-color:rgba(242,239,232,.08)}
+
+/* ABOUT — return the inset, softly rounded photograph frame. */
+.about-image-band{
+  margin-left:4.2vw;
+  margin-right:4.2vw;
+  overflow:hidden;
+  border-radius:14px;
+  box-shadow:0 32px 90px rgba(0,0,0,.30);
+}
+
+/* Standards — larger outline words and enough room for the right edge. */
+.standard-list article{overflow:visible}
+.standard-word{
+  min-width:max-content;
+  max-width:none;
+  padding-right:.08em;
+  font-size:clamp(3.5rem,4.45vw,5.35rem);
+  opacity:.92;
+  -webkit-text-stroke-color:rgba(242,239,232,.25);
+  transform:scaleX(.88);
+  transform-origin:right center;
+}
+.standard-list article:hover .standard-word{-webkit-text-stroke-color:rgba(241,42,15,.48)}
+
+/* Large architectural circles — deliberately clipped by the section edge. */
+.standard-section::after,
+.about-page .editorial-intro::after,
+.process-page .process-overview::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  width:clamp(25rem,39vw,43rem);
+  aspect-ratio:1;
+  border:1px solid rgba(241,42,15,.30);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at center,var(--yiso-red) 0 .22rem,transparent .27rem),
+    linear-gradient(90deg,transparent calc(50% - .5px),rgba(242,239,232,.12) 50%,transparent calc(50% + .5px)),
+    linear-gradient(transparent calc(50% - .5px),rgba(242,239,232,.12) 50%,transparent calc(50% + .5px));
+  box-shadow:
+    inset 0 0 0 clamp(2.5rem,5vw,5rem) rgba(242,239,232,.012),
+    0 0 90px rgba(241,42,15,.045);
+  pointer-events:none;
+}
+.standard-section::after{
+  right:clamp(-18rem,-12vw,-8rem);
+  bottom:clamp(-16rem,-10vw,-7rem);
+  transform:rotate(9deg);
+}
+.about-page .editorial-intro::after{
+  left:clamp(-19rem,-13vw,-9rem);
+  bottom:clamp(-17rem,-11vw,-8rem);
+  transform:rotate(-11deg);
+}
+.process-page .process-overview::before{
+  right:clamp(-20rem,-14vw,-10rem);
+  top:clamp(8rem,13vw,14rem);
+  transform:rotate(13deg);
+}
+
+/* The cursor moves inside an open dialog so it remains in the top layer. */
+.lightbox[open] > .yiso-pointer{position:fixed;z-index:10010}
+
+@media(max-width:1100px){
+  .standard-word{
+    position:absolute;
+    right:.2rem;
+    bottom:1.4rem;
+    font-size:2.8rem;
+    opacity:.68;
+  }
+}
+
+/* V5.15 — hover continuity for PROCESS and breathing room for ABOUT values. */
+
+/* ABOUT: the red axis label no longer touches the hover surface edge. */
+.values-grid article,
+.values-grid article:first-child,
+.values-grid article:last-child{
+  box-shadow:inset 0 0 0 rgba(241,42,15,0);
+  transition:background-color .35s ease,box-shadow .38s var(--yiso-ease);
+}
+.values-grid .value-no{
+  padding-left:clamp(1rem,1.35vw,1.35rem);
+  white-space:nowrap;
+}
+.values-grid article:hover{
+  padding-left:0;
+  padding-right:0;
+  background:rgba(255,255,255,.014);
+  box-shadow:inset 2px 0 0 rgba(241,42,15,.72);
+}
+.values-grid article::before{
+  background:linear-gradient(90deg,rgba(241,42,15,.105),rgba(241,42,15,.04) 42%,transparent 86%);
+}
+
+/* PROCESS: the hover wash begins at the rail and dissolves across the full row. */
+.process-detail,
+.process-detail:hover{
+  overflow:visible;
+  padding-left:0;
+  padding-right:0;
+  background:transparent;
+}
+.process-hover-wash{
+  position:absolute;
+  z-index:0;
+  top:0;
+  right:0;
+  bottom:0;
+  left:calc(var(--process-rail) * -1 + .72rem);
+  display:block;
+  margin:0;
+  border:0;
+  background:
+    linear-gradient(90deg,
+      rgba(241,42,15,.105) 0,
+      rgba(241,42,15,.065) 25%,
+      rgba(242,239,232,.018) 62%,
+      transparent 100%);
+  box-shadow:inset 2px 0 0 rgba(241,42,15,.70);
+  opacity:0;
+  pointer-events:none;
+  transform:scaleX(.985);
+  transform-origin:left center;
+  transition:opacity .38s ease,transform .58s var(--yiso-ease);
+}
+.process-detail:hover .process-hover-wash{
+  opacity:1;
+  transform:scaleX(1);
+}
+.process-detail::before,
+.process-detail::after{z-index:2}
+.process-detail>span,
+.process-detail>h3,
+.process-detail>.process-detail-copy{
+  position:relative;
+  z-index:1;
+}
+.process-detail::before{
+  transition:box-shadow .35s ease,background-color .35s ease;
+}
+.process-detail:hover::before{
+  background:var(--yiso-red);
+  box-shadow:
+    0 0 0 .38rem rgba(241,42,15,.075),
+    0 0 20px rgba(241,42,15,.22);
+}
+
+@media(max-width:680px){
+  .values-grid .value-no{padding-left:.85rem}
+  .process-hover-wash{left:calc(var(--process-rail) * -1 + .42rem)}
+}
+
+@media(hover:none),(pointer:coarse){
+  .process-hover-wash{display:none}
+  .values-grid article:hover{
+    background:transparent;
+    box-shadow:none;
+  }
+  .values-grid article:hover::before{opacity:0}
+}
+
+@media(max-width:720px){
+  .manifesto::before{left:-7rem;bottom:1.5rem;width:18rem}
+  .manifesto::after{left:.8rem;bottom:2rem;font-size:7.4rem}
+  .number-list article::after{font-size:clamp(2.6rem,13vw,4.2rem);opacity:.72}
+  .about-image-band{margin-left:1rem;margin-right:1rem;border-radius:10px}
+  .standard-section::after,
+  .about-page .editorial-intro::after,
+  .process-page .process-overview::before{display:none}
+}
+
+@media(max-width:420px){
+  .about-image-band{margin-left:.75rem;margin-right:.75rem;border-radius:8px}
+}
+
+/* V5.14 — stronger typography on the continuous warm-black canvas.
+   Contrast and depth are added without changing any text box dimensions. */
+:root{
+  --yiso-muted:#c1bdb4;
+  --yiso-ghost-stroke:rgba(242,239,232,.16);
+  --yiso-title-shadow:
+    0 -1px 0 rgba(255,255,255,.075),
+    0 2px 0 rgba(0,0,0,.72),
+    0 10px 24px rgba(0,0,0,.46),
+    0 28px 64px rgba(0,0,0,.24);
+}
+
+html{
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+body{
+  text-shadow:0 1px 1px rgba(0,0,0,.48);
+}
+
+/* Main headings get a restrained raised edge rather than a heavy glow. */
+.hero h1,
+.editorial-hero h1,
+.archive-hero h1,
+.project-hero h1,
+.inquiry-hero h1,
+.thanks-shell h1{
+  text-shadow:
+    0 -1px 0 rgba(255,255,255,.10),
+    0 3px 0 rgba(0,0,0,.72),
+    0 14px 34px rgba(0,0,0,.70),
+    0 34px 76px rgba(0,0,0,.42);
+}
+
+.manifesto h2,
+.numbers-intro h2,
+.spaces-heading h2,
+.space-copy h3,
+.standard-head h2,
+.standard-list h3,
+.process-head h2,
+.process-grid h3,
+.contact h2,
+.split-heading-copy h2,
+.numbers-panel-head h2,
+.values-head h2,
+.values-grid h3,
+.process-overview-head h2,
+.process-detail h3,
+.process-proof-copy h2,
+.editorial-cta h2,
+.archive-title-row h2,
+.archive-card h2,
+.archive-contact h2,
+.project-intro-copy h2,
+.project-gallery-head h2,
+.next-project-content h2,
+.inquiry-aside h2,
+.form-top h2,
+.form-section-head h3{
+  color:#f7f3ec;
+  text-shadow:var(--yiso-title-shadow);
+}
+
+/* Descriptive copy is lifted one level while metadata remains secondary. */
+.manifesto-detail p,
+.number-list article p,
+.spaces-heading>p,
+.space-copy>p,
+.standard-list p,
+.process-note,
+.split-heading-copy>p,
+.values-grid p,
+.process-detail-copy p,
+.process-proof-copy>p,
+.archive-card-copy,
+.project-intro-copy>p,
+.inquiry-aside>p,
+.inquiry-step p,
+.consent-copy,
+.submit-note{
+  color:var(--yiso-muted);
+  font-weight:470;
+  text-shadow:
+    0 1px 1px rgba(0,0,0,.78),
+    0 8px 22px rgba(0,0,0,.22);
+}
+
+.discipline-track span,
+.editorial-hero-bottom p,
+.inquiry-hero-bottom p,
+.project-hero-bottom p,
+.hero-bottom p{
+  text-shadow:
+    0 1px 1px rgba(0,0,0,.90),
+    0 8px 24px rgba(0,0,0,.58);
+}
+
+/* All architectural outline words now read at the same strength as TRUST. */
+.manifesto::after,
+.numbers::before,
+.number-list article::after,
+.spaces::before,
+.standard-section::before,
+.process::after,
+.about-page .editorial-intro::before,
+.numbers-panel::before,
+.process-page .process-overview::after,
+.contact::before,
+.archive-hero::before,
+.archive-contact::before,
+.project-intro::before,
+.project-gallery-section::before,
+.inquiry-main::before{
+  color:transparent;
+  opacity:1;
+  -webkit-text-stroke:1px var(--yiso-ghost-stroke);
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.045),
+    2px 3px 0 rgba(0,0,0,.58),
+    0 18px 42px rgba(0,0,0,.38),
+    0 0 50px rgba(241,42,15,.028);
+}
+
+.standard-word,
+.archive-title-row>strong{
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.045),
+    2px 3px 0 rgba(0,0,0,.62),
+    0 16px 34px rgba(0,0,0,.34),
+    0 0 40px rgba(241,42,15,.035);
+}
+.standard-word{-webkit-text-stroke-color:rgba(242,239,232,.32)}
+.archive-title-row>strong{-webkit-text-stroke-color:rgba(242,239,232,.30)}
+
+/* Restore the page-wide type scenes that remain safe behind their content. */
+.contact,
+.archive-contact,
+.project-intro,
+.project-gallery-section,
+.inquiry-main{
+  isolation:isolate;
+}
+.contact::before{content:"LET'S TALK"!important;z-index:0}
+.archive-hero::before{content:"PROJECTS"!important;z-index:0;top:auto;bottom:.04em}
+.archive-contact::before{content:"PROJECT"!important;z-index:0}
+.project-intro::before{content:"OVERVIEW"!important;z-index:0}
+.project-gallery-section::before{content:"09"!important;z-index:0}
+.inquiry-main::before{content:"BRIEF"!important;z-index:0;left:auto;right:-.03em}
+
+.contact>*:not(.contact-grid),
+.archive-hero>*,
+.archive-contact>*,
+.project-intro>*,
+.project-gallery-section>*,
+.inquiry-main>*{
+  position:relative;
+  z-index:1;
+}
+
+.inquiry-form::before{color:rgba(242,239,232,.62)}
+.form-field input::placeholder,
+.form-field textarea::placeholder,
+.custom-select-trigger{color:#a9a59d}
+
+@media(max-width:720px){
+  :root{
+    --yiso-muted:#bbb7ae;
+    --yiso-title-shadow:
+      0 -1px 0 rgba(255,255,255,.06),
+      0 2px 0 rgba(0,0,0,.62),
+      0 9px 22px rgba(0,0,0,.38);
+  }
+
+  .manifesto::after,
+  .numbers::before,
+  .number-list article::after,
+  .spaces::before,
+  .standard-section::before,
+  .process::after,
+  .about-page .editorial-intro::before,
+  .numbers-panel::before,
+  .process-page .process-overview::after{
+    opacity:.72;
+    -webkit-text-stroke-color:rgba(242,239,232,.18);
+    text-shadow:0 10px 24px rgba(0,0,0,.34);
+  }
+
+  /* The restored page-wide words are desktop composition devices. */
+  .contact::before,
+  .archive-hero::before,
+  .archive-contact::before,
+  .project-intro::before,
+  .project-gallery-section::before,
+  .inquiry-main::before{
+    content:none!important;
+  }
+
+  .hero h1,
+  .editorial-hero h1,
+  .archive-hero h1,
+  .project-hero h1,
+  .inquiry-hero h1,
+  .thanks-shell h1{
+    text-shadow:
+      0 -1px 0 rgba(255,255,255,.08),
+      0 2px 0 rgba(0,0,0,.68),
+      0 11px 28px rgba(0,0,0,.66);
+  }
+}
+
+/* V5.16 — the standard index stays clear of the hover surface edge. */
+.standard-number{
+  box-sizing:border-box;
+  padding-left:clamp(1rem,1.35vw,1.35rem);
+  white-space:nowrap;
+}
+
+@media(max-width:680px){
+  .standard-number{padding-left:.65rem}
 }

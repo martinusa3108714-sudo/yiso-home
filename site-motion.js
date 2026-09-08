@@ -435,11 +435,20 @@
     let pointerX = -100;
     let pointerY = -100;
     let customCursorActive = false;
+    const syncPointerHost = () => {
+      const openDialog = document.querySelector("dialog[open]");
+      const nextHost = openDialog || body;
+      if (pointer.parentElement !== nextHost) nextHost.append(pointer);
+    };
+    const requestPointerHostSync = () => {
+      window.requestAnimationFrame(syncPointerHost);
+    };
     const paintPointer = () => {
       pointer.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
       pointerFrame = 0;
     };
     document.addEventListener("pointermove", (event) => {
+      syncPointerHost();
       if (!customCursorActive) {
         root.classList.add("yiso-custom-cursor");
         customCursorActive = true;
@@ -455,6 +464,13 @@
       root.classList.remove("yiso-custom-cursor");
       customCursorActive = false;
     }, { passive: true });
+    document.addEventListener("click", requestPointerHostSync, { passive: true });
+    document.querySelectorAll("dialog").forEach((dialog) => {
+      dialog.addEventListener("close", () => {
+        if (pointer.parentElement !== body) body.append(pointer);
+      });
+      dialog.addEventListener("cancel", requestPointerHostSync);
+    });
   }
 
   const header = document.querySelector(".global-header");
