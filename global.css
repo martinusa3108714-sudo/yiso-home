@@ -1993,6 +1993,127 @@ body{
   }
 }
 
+/* V5.18 — transparent labeling for conceptual design studies. */
+.concept-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  width:max-content;
+  padding:.48rem .68rem;
+  border:1px solid rgba(255,74,50,.82);
+  border-radius:999px;
+  background:rgba(8,8,8,.68);
+  color:#fff;
+  font-size:.75rem;
+  font-weight:850;
+  line-height:1;
+  letter-spacing:.14em;
+  text-shadow:0 1px 8px rgba(0,0,0,.72);
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  white-space:nowrap;
+}
+
+.concept-badge::before{
+  content:"";
+  flex:0 0 .34rem;
+  width:.34rem;
+  height:.34rem;
+  border-radius:50%;
+  background:var(--yiso-signal);
+  box-shadow:0 0 0 .18rem rgba(241,42,15,.13);
+}
+
+.space-image-wrap>.concept-badge,
+.archive-image>.concept-badge{
+  position:absolute;
+  z-index:5;
+  top:.9rem;
+  right:.9rem;
+  bottom:auto;
+  left:auto;
+}
+
+.project-kicker-row{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.75rem 1rem;
+  margin-bottom:1.15rem;
+}
+
+.project-kicker-row .project-kicker{
+  margin:0;
+}
+
+.project-kicker-row .concept-badge{
+  background:rgba(8,8,8,.48);
+}
+
+.next-project-label-row{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin:0 0 .65rem;
+}
+
+.next-project-label-row>p{
+  margin:0;
+}
+
+.concept-badge--next{
+  padding:.36rem .52rem;
+  font-size:.68rem;
+  background:rgba(8,8,8,.5);
+}
+
+.concept-disclaimer{
+  margin:0;
+  padding:1.35rem 4.2vw;
+  border-top:1px solid rgba(242,239,232,.13);
+  background:#0b0b0a;
+  color:rgba(242,239,232,.64);
+  font-size:.75rem;
+  font-weight:450;
+  line-height:1.7;
+  letter-spacing:.015em;
+  text-align:center;
+  text-shadow:none;
+}
+
+.concept-disclaimer em{
+  font-style:italic;
+}
+
+@media(max-width:720px){
+  .space-image-wrap>.concept-badge,
+  .archive-image>.concept-badge{
+    top:.75rem;
+    right:.75rem;
+  }
+
+  .project-kicker-row{
+    gap:.65rem .75rem;
+  }
+
+  .concept-disclaimer{
+    padding:1.25rem 1.4rem;
+    text-align:left;
+  }
+}
+
+@media(max-width:390px){
+  .concept-badge{
+    padding:.44rem .6rem;
+    letter-spacing:.11em;
+  }
+
+  .concept-badge--next{
+    padding:.34rem .48rem;
+  }
+}
+
 /* The outline labels stay secondary and clear of the explanatory copy. */
 .standard-list article:hover{padding-left:0}
 .standard-word{
