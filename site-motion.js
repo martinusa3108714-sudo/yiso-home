@@ -373,17 +373,17 @@
     ".project-intro",
     ".project-gallery-section",
     ".next-project",
-    ".inquiry-main"
+    ".inquiry-main",
+    "main.thanks-shell"
   ].join(",");
 
   const sections = Array.from(document.querySelectorAll(sectionSelector));
-  sections.forEach((section, index) => {
+  sections.forEach((section) => {
     section.classList.add("yiso-design-section");
-    const marker = document.createElement("span");
-    marker.className = "yiso-section-marker";
-    marker.setAttribute("aria-hidden", "true");
-    marker.textContent = String(index + 1).padStart(2, "0");
-    section.append(marker);
+    const axis = document.createElement("span");
+    axis.className = "yiso-signature-axis";
+    axis.setAttribute("aria-hidden", "true");
+    section.prepend(axis);
   });
 
   if (!("IntersectionObserver" in window) || reduceMotion) {
@@ -398,31 +398,6 @@
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     sections.forEach((section) => sectionObserver.observe(section));
   }
-
-  const spotlightTargets = Array.from(document.querySelectorAll([
-    ".space-card",
-    ".archive-card-link",
-    ".gallery-item",
-    ".project-meta > div",
-    ".numbers-panel article",
-    ".values-grid article",
-    ".inquiry-step"
-  ].join(",")));
-
-  spotlightTargets.forEach((target) => {
-    if (target.querySelector(":scope > .yiso-card-light")) return;
-    const light = document.createElement("span");
-    light.className = "yiso-card-light";
-    light.setAttribute("aria-hidden", "true");
-    target.append(light);
-
-    if (!finePointer || reduceMotion) return;
-    target.addEventListener("pointermove", (event) => {
-      const bounds = target.getBoundingClientRect();
-      target.style.setProperty("--yiso-spot-x", `${event.clientX - bounds.left}px`);
-      target.style.setProperty("--yiso-spot-y", `${event.clientY - bounds.top}px`);
-    }, { passive: true });
-  });
 
   let pointer;
   if (finePointer && !reduceMotion) {
