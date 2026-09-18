@@ -1009,8 +1009,7 @@ body::selection{background:var(--yiso-red);color:#fff}
 /* The native arrow disappears only after the custom cursor is active.
    This keeps the page usable if JavaScript is unavailable. */
 @media (hover:hover) and (pointer:fine){
-  html.yiso-custom-cursor,
-  html.yiso-custom-cursor *{cursor:none!important}
+  
 }
 
 .global-header{
@@ -3976,3 +3975,6 @@ main+footer,
     margin-left:0;
   }
 }
+
+/* V5.33: native cursor */
+.yiso-pointer{display:none!important}

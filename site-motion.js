@@ -399,55 +399,7 @@
     sections.forEach((section) => sectionObserver.observe(section));
   }
 
-  let pointer;
-  if (finePointer && !reduceMotion) {
-    pointer = document.createElement("span");
-    pointer.className = "yiso-pointer";
-    pointer.setAttribute("aria-hidden", "true");
-    body.append(pointer);
-
-    let pointerFrame = 0;
-    let pointerX = -100;
-    let pointerY = -100;
-    let customCursorActive = false;
-    const syncPointerHost = () => {
-      const openDialog = document.querySelector("dialog[open]");
-      const nextHost = openDialog || body;
-      if (pointer.parentElement !== nextHost) nextHost.append(pointer);
-    };
-    const requestPointerHostSync = () => {
-      window.requestAnimationFrame(syncPointerHost);
-    };
-    const paintPointer = () => {
-      pointer.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
-      pointerFrame = 0;
-    };
-    document.addEventListener("pointermove", (event) => {
-      syncPointerHost();
-      if (!customCursorActive) {
-        root.classList.add("yiso-custom-cursor");
-        customCursorActive = true;
-      }
-      pointerX = event.clientX;
-      pointerY = event.clientY;
-      pointer.classList.add("is-active");
-      pointer.classList.toggle("is-interactive", Boolean(event.target instanceof Element && event.target.closest("a, button, input, textarea, .custom-select")));
-      if (!pointerFrame) pointerFrame = window.requestAnimationFrame(paintPointer);
-    }, { passive: true });
-    document.addEventListener("pointerleave", () => {
-      pointer.classList.remove("is-active", "is-interactive");
-      root.classList.remove("yiso-custom-cursor");
-      customCursorActive = false;
-    }, { passive: true });
-    document.addEventListener("click", requestPointerHostSync, { passive: true });
-    document.querySelectorAll("dialog").forEach((dialog) => {
-      dialog.addEventListener("close", () => {
-        if (pointer.parentElement !== body) body.append(pointer);
-      });
-      dialog.addEventListener("cancel", requestPointerHostSync);
-    });
-  }
-
+  // Native system cursor on every page, including dialogs.
   const header = document.querySelector(".global-header");
   let scrollFrame = 0;
   const paintScroll = () => {
