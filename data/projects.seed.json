@@ -1,0 +1,3343 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-21T00:45:56.773Z",
+  "project_count": 31,
+  "projects": [
+    {
+      "id": "seed-centum-park",
+      "name": "센텀파크 아파트",
+      "name_en": "CENTUM PARK APARTMENT",
+      "slug": "centum-park",
+      "project_type": "BUILT",
+      "year": 2026,
+      "location": "대한민국",
+      "category": "RESIDENTIAL",
+      "short_description": "밝은 우드 바닥과 절제된 벽면, 창을 따라 흐르는 빛으로 담백한 일상을 담은 주거 공간.",
+      "intro_title": "빛과 여백으로 정돈한 일상.",
+      "detail_description": "거실의 넓은 창과 밝은 바닥이 공간의 개방감을 이어갑니다. 간결한 수납과 낮은 채도의 마감이 어우러져 생활의 장면을 차분하게 받아냅니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/centum-park/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "센텀파크 아파트 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 1,
+      "legacy_path": "project-built-centum-park.html",
+      "images": [
+        {
+          "image_url": "./images/built/centum-park/01.png",
+          "alt_text": "센텀파크 아파트 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/centum-park/01.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/02.png",
+          "alt_text": "센텀파크 아파트 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/centum-park/02.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/03.png",
+          "alt_text": "센텀파크 아파트 인테리어 03",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 3,
+          "source_path": "./images/built/centum-park/03.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/04.png",
+          "alt_text": "센텀파크 아파트 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/centum-park/04.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/05.png",
+          "alt_text": "센텀파크 아파트 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/centum-park/05.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/06.png",
+          "alt_text": "센텀파크 아파트 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/centum-park/06.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/07.png",
+          "alt_text": "센텀파크 아파트 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/centum-park/07.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/08.png",
+          "alt_text": "센텀파크 아파트 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/centum-park/08.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/09.png",
+          "alt_text": "센텀파크 아파트 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/centum-park/09.png"
+        },
+        {
+          "image_url": "./images/built/centum-park/10.png",
+          "alt_text": "센텀파크 아파트 인테리어 10",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 10,
+          "source_path": "./images/built/centum-park/10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-ilgwang-library",
+      "name": "기장 일광도서관",
+      "name_en": "GIJANG ILGWANG LIBRARY",
+      "slug": "ilgwang-library",
+      "project_type": "BUILT",
+      "year": 2025,
+      "location": "대한민국",
+      "category": "CULTURAL",
+      "short_description": "단정한 외벽과 넓은 창, 녹음이 맞닿은 풍경 속에 자리한 지역의 도서관.",
+      "intro_title": "일상의 풍경 속에 배움의 자리를 열다.",
+      "detail_description": "수평으로 이어지는 창과 입체적인 외벽이 차분한 균형을 이룹니다. 주변의 녹음과 열린 진입 공간이 어우러져 도서관으로 향하는 길을 만듭니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/ilgwang-library/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "기장 일광도서관 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 2,
+      "legacy_path": "project-built-ilgwang-library.html",
+      "images": [
+        {
+          "image_url": "./images/built/ilgwang-library/01.png",
+          "alt_text": "기장 일광도서관 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/ilgwang-library/01.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/02.png",
+          "alt_text": "기장 일광도서관 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/ilgwang-library/02.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/03.png",
+          "alt_text": "기장 일광도서관 인테리어 03",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 3,
+          "source_path": "./images/built/ilgwang-library/03.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/04.png",
+          "alt_text": "기장 일광도서관 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/ilgwang-library/04.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/05.png",
+          "alt_text": "기장 일광도서관 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/ilgwang-library/05.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/06.png",
+          "alt_text": "기장 일광도서관 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/ilgwang-library/06.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/07.png",
+          "alt_text": "기장 일광도서관 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/ilgwang-library/07.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/08.png",
+          "alt_text": "기장 일광도서관 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/ilgwang-library/08.png"
+        },
+        {
+          "image_url": "./images/built/ilgwang-library/09.png",
+          "alt_text": "기장 일광도서관 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/ilgwang-library/09.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-yongho-w",
+      "name": "용호동 W아파트",
+      "name_en": "YONGHO W APARTMENT",
+      "slug": "yongho-w",
+      "project_type": "BUILT",
+      "year": 2025,
+      "location": "대한민국",
+      "category": "RESIDENTIAL",
+      "short_description": "결이 살아 있는 석재 아일랜드와 짙은 수납, 따뜻한 빛이 균형을 이루는 주거 공간.",
+      "intro_title": "선명한 질감으로 완성한 생활의 중심.",
+      "detail_description": "주방의 아일랜드가 넓은 공간의 중심을 잡고 석재의 무늬가 풍부한 표정을 더합니다. 간결한 수납과 절제된 조명이 재료의 질감을 차분하게 드러냅니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/yongho-w/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "용호동 W아파트 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 3,
+      "legacy_path": "project-built-yongho-w.html",
+      "images": [
+        {
+          "image_url": "./images/built/yongho-w/updated-01.png",
+          "alt_text": "용호동 W아파트 대표 사진",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 1,
+          "source_path": "./images/built/yongho-w/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-04.png",
+          "alt_text": "용호동 W아파트 인테리어 02",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 2,
+          "source_path": "./images/built/yongho-w/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-03.png",
+          "alt_text": "용호동 W아파트 인테리어 03",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 3,
+          "source_path": "./images/built/yongho-w/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-02.png",
+          "alt_text": "용호동 W아파트 인테리어 04",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 4,
+          "source_path": "./images/built/yongho-w/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-05.png",
+          "alt_text": "용호동 W아파트 인테리어 05",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 5,
+          "source_path": "./images/built/yongho-w/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-06.png",
+          "alt_text": "용호동 W아파트 인테리어 06",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 6,
+          "source_path": "./images/built/yongho-w/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-07.png",
+          "alt_text": "용호동 W아파트 인테리어 07",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 7,
+          "source_path": "./images/built/yongho-w/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-08.png",
+          "alt_text": "용호동 W아파트 인테리어 08",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 8,
+          "source_path": "./images/built/yongho-w/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-09.png",
+          "alt_text": "용호동 W아파트 인테리어 09",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 9,
+          "source_path": "./images/built/yongho-w/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-10.png",
+          "alt_text": "용호동 W아파트 인테리어 10",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 10,
+          "source_path": "./images/built/yongho-w/updated-10.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-11.png",
+          "alt_text": "용호동 W아파트 인테리어 11",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 11,
+          "source_path": "./images/built/yongho-w/updated-11.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-12.png",
+          "alt_text": "용호동 W아파트 인테리어 12",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 12,
+          "source_path": "./images/built/yongho-w/updated-12.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-13.png",
+          "alt_text": "용호동 W아파트 인테리어 13",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 13,
+          "source_path": "./images/built/yongho-w/updated-13.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-14.png",
+          "alt_text": "용호동 W아파트 인테리어 14",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 14,
+          "source_path": "./images/built/yongho-w/updated-14.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-15.png",
+          "alt_text": "용호동 W아파트 인테리어 15",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 15,
+          "source_path": "./images/built/yongho-w/updated-15.png"
+        },
+        {
+          "image_url": "./images/built/yongho-w/updated-16.png",
+          "alt_text": "용호동 W아파트 인테리어 16",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 16,
+          "source_path": "./images/built/yongho-w/updated-16.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-union-square",
+      "name": "유니온 스퀘어",
+      "name_en": "UNION SQUARE",
+      "slug": "union-square",
+      "project_type": "BUILT",
+      "year": 2024,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "유리와 짙은 프레임의 정돈된 입면, 열린 진입부가 도시의 흐름을 받아들이는 빌딩.",
+      "intro_title": "도시와 공간을 연결하는 첫인상.",
+      "detail_description": "반복되는 창의 선과 투명한 저층부가 건물에 선명한 표정을 만듭니다. 계단과 입구, 유리 너머의 빛이 이어져 거리에서 내부로 향하는 시선을 자연스럽게 이끕니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/union-square/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "유니온 스퀘어 대표 사진",
+      "is_home_featured": true,
+      "home_order": 1,
+      "sort_order": 4,
+      "legacy_path": "project-built-union-square.html",
+      "images": [
+        {
+          "image_url": "./images/built/union-square/updated-01.png",
+          "alt_text": "유니온 스퀘어 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/union-square/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-02.png",
+          "alt_text": "유니온 스퀘어 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/union-square/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-12.png",
+          "alt_text": "유니온 스퀘어 인테리어 03",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 3,
+          "source_path": "./images/built/union-square/updated-12.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-16.png",
+          "alt_text": "유니온 스퀘어 인테리어 04",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 4,
+          "source_path": "./images/built/union-square/updated-16.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-25.png",
+          "alt_text": "유니온 스퀘어 인테리어 05",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 5,
+          "source_path": "./images/built/union-square/updated-25.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-03.png",
+          "alt_text": "유니온 스퀘어 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/union-square/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-04.png",
+          "alt_text": "유니온 스퀘어 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/union-square/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-05.png",
+          "alt_text": "유니온 스퀘어 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/union-square/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-06.png",
+          "alt_text": "유니온 스퀘어 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/union-square/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-07.png",
+          "alt_text": "유니온 스퀘어 인테리어 10",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 10,
+          "source_path": "./images/built/union-square/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-08.png",
+          "alt_text": "유니온 스퀘어 인테리어 11",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 11,
+          "source_path": "./images/built/union-square/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-09.png",
+          "alt_text": "유니온 스퀘어 인테리어 12",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 12,
+          "source_path": "./images/built/union-square/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-10.png",
+          "alt_text": "유니온 스퀘어 인테리어 13",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 13,
+          "source_path": "./images/built/union-square/updated-10.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-11.png",
+          "alt_text": "유니온 스퀘어 인테리어 14",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 14,
+          "source_path": "./images/built/union-square/updated-11.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-13.png",
+          "alt_text": "유니온 스퀘어 인테리어 15",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 15,
+          "source_path": "./images/built/union-square/updated-13.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-14.png",
+          "alt_text": "유니온 스퀘어 인테리어 16",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 16,
+          "source_path": "./images/built/union-square/updated-14.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-15.png",
+          "alt_text": "유니온 스퀘어 인테리어 17",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 17,
+          "source_path": "./images/built/union-square/updated-15.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-17.png",
+          "alt_text": "유니온 스퀘어 인테리어 18",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 18,
+          "source_path": "./images/built/union-square/updated-17.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-18.png",
+          "alt_text": "유니온 스퀘어 인테리어 19",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 19,
+          "source_path": "./images/built/union-square/updated-18.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-19.png",
+          "alt_text": "유니온 스퀘어 인테리어 20",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 20,
+          "source_path": "./images/built/union-square/updated-19.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-20.png",
+          "alt_text": "유니온 스퀘어 인테리어 21",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 21,
+          "source_path": "./images/built/union-square/updated-20.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-21.png",
+          "alt_text": "유니온 스퀘어 인테리어 22",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 22,
+          "source_path": "./images/built/union-square/updated-21.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-22.png",
+          "alt_text": "유니온 스퀘어 인테리어 23",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 23,
+          "source_path": "./images/built/union-square/updated-22.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-23.png",
+          "alt_text": "유니온 스퀘어 인테리어 24",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 24,
+          "source_path": "./images/built/union-square/updated-23.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-24.png",
+          "alt_text": "유니온 스퀘어 인테리어 25",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 25,
+          "source_path": "./images/built/union-square/updated-24.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-26.png",
+          "alt_text": "유니온 스퀘어 인테리어 26",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 26,
+          "source_path": "./images/built/union-square/updated-26.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-27.png",
+          "alt_text": "유니온 스퀘어 인테리어 27",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 27,
+          "source_path": "./images/built/union-square/updated-27.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-28.png",
+          "alt_text": "유니온 스퀘어 인테리어 28",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 28,
+          "source_path": "./images/built/union-square/updated-28.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-29.png",
+          "alt_text": "유니온 스퀘어 인테리어 29",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 29,
+          "source_path": "./images/built/union-square/updated-29.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-30.png",
+          "alt_text": "유니온 스퀘어 인테리어 30",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 30,
+          "source_path": "./images/built/union-square/updated-30.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-31.png",
+          "alt_text": "유니온 스퀘어 인테리어 31",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 31,
+          "source_path": "./images/built/union-square/updated-31.png"
+        },
+        {
+          "image_url": "./images/built/union-square/updated-32.png",
+          "alt_text": "유니온 스퀘어 인테리어 32",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 32,
+          "source_path": "./images/built/union-square/updated-32.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-mangmi-apartment",
+      "name": "망미동 더샵",
+      "name_en": "MANGMI THE SHARP",
+      "slug": "mangmi-apartment",
+      "project_type": "BUILT",
+      "year": 2023,
+      "location": "대한민국",
+      "category": "RESIDENTIAL",
+      "short_description": "밝은 바탕에 우드 수납과 열린 주방을 더해 생활의 흐름을 담백하게 풀어낸 주거 공간.",
+      "intro_title": "생활의 중심을 간결하게 정돈하다.",
+      "detail_description": "벽면을 따라 이어지는 수납과 넓게 열린 주방이 공간을 정돈합니다. 절제된 색감과 간결한 마감이 일상의 가구와 물건을 위한 편안한 배경이 됩니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/mangmi-apartment/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "거실에서 바라본 아일랜드 주방",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 5,
+      "legacy_path": "project-built-mangmi-apartment.html",
+      "images": [
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-01.png",
+          "alt_text": "망미동 더샵 대표 사진",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 1,
+          "source_path": "./images/built/mangmi-apartment/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-02.png",
+          "alt_text": "망미동 더샵 인테리어 02",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 2,
+          "source_path": "./images/built/mangmi-apartment/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-03.png",
+          "alt_text": "망미동 더샵 인테리어 03",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 3,
+          "source_path": "./images/built/mangmi-apartment/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-04.png",
+          "alt_text": "망미동 더샵 인테리어 04",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 4,
+          "source_path": "./images/built/mangmi-apartment/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-05.png",
+          "alt_text": "망미동 더샵 인테리어 05",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 5,
+          "source_path": "./images/built/mangmi-apartment/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-06.png",
+          "alt_text": "망미동 더샵 인테리어 06",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 6,
+          "source_path": "./images/built/mangmi-apartment/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/mangmi-apartment/updated-07.png",
+          "alt_text": "망미동 더샵 인테리어 07",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 7,
+          "source_path": "./images/built/mangmi-apartment/updated-07.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-spa-the-space",
+      "name": "스파 더 스페이스",
+      "name_en": "SPA THE SPACE",
+      "slug": "spa-the-space",
+      "project_type": "BUILT",
+      "year": 2023,
+      "location": "대한민국",
+      "category": "WELLNESS",
+      "short_description": "높은 층고와 밝은 석재, 수직으로 흐르는 빛이 휴식의 첫 장면을 만드는 스파 공간.",
+      "intro_title": "빛의 깊이로 시작되는 휴식.",
+      "detail_description": "로비를 채우는 밝은 재료와 길게 뻗은 조명이 공간의 높이를 드러냅니다. 카운터와 곡선의 디테일, 식재가 어우러져 넓은 스케일 안에 부드러운 인상을 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/spa-the-space/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "스파 더 스페이스 대표 사진",
+      "is_home_featured": true,
+      "home_order": 2,
+      "sort_order": 6,
+      "legacy_path": "project-built-spa-the-space.html",
+      "images": [
+        {
+          "image_url": "./images/built/spa-the-space/updated-01.png",
+          "alt_text": "스파 더 스페이스 대표 사진",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 1,
+          "source_path": "./images/built/spa-the-space/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-02.png",
+          "alt_text": "스파 더 스페이스 인테리어 02",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 2,
+          "source_path": "./images/built/spa-the-space/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-03.png",
+          "alt_text": "스파 더 스페이스 인테리어 03",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 3,
+          "source_path": "./images/built/spa-the-space/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-04.png",
+          "alt_text": "스파 더 스페이스 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/spa-the-space/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-05.png",
+          "alt_text": "스파 더 스페이스 인테리어 05",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 5,
+          "source_path": "./images/built/spa-the-space/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-06.png",
+          "alt_text": "스파 더 스페이스 인테리어 06",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 6,
+          "source_path": "./images/built/spa-the-space/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-07.png",
+          "alt_text": "스파 더 스페이스 인테리어 07",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 7,
+          "source_path": "./images/built/spa-the-space/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-08.png",
+          "alt_text": "스파 더 스페이스 인테리어 08",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 8,
+          "source_path": "./images/built/spa-the-space/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-09.png",
+          "alt_text": "스파 더 스페이스 인테리어 09",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 9,
+          "source_path": "./images/built/spa-the-space/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/spa-the-space/updated-10.png",
+          "alt_text": "스파 더 스페이스 인테리어 10",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 10,
+          "source_path": "./images/built/spa-the-space/updated-10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-yangsan-house",
+      "name": "양산주택",
+      "name_en": "YANGSAN HOUSE",
+      "slug": "yangsan-house",
+      "project_type": "BUILT",
+      "year": 2022,
+      "location": "대한민국",
+      "category": "RESIDENTIAL",
+      "short_description": "부드럽게 휘어진 외벽과 큰 창, 마당의 녹음이 어우러진 여유로운 주거 공간.",
+      "intro_title": "곡선과 빛이 감싸는 생활의 풍경.",
+      "detail_description": "곡선을 따라 이어지는 외벽이 주택을 감싸고 큰 창이 안팎의 풍경을 연결합니다. 벽돌의 섬세한 결과 마당의 식재가 일상에 차분한 깊이를 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/yangsan-house/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "양산주택 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 7,
+      "legacy_path": "project-built-yangsan-house.html",
+      "images": [
+        {
+          "image_url": "./images/built/yangsan-house/01.png",
+          "alt_text": "양산주택 대표 사진",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 1,
+          "source_path": "./images/built/yangsan-house/01.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/02.png",
+          "alt_text": "양산주택 인테리어 02",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 2,
+          "source_path": "./images/built/yangsan-house/02.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/07.png",
+          "alt_text": "양산주택 인테리어 03",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 3,
+          "source_path": "./images/built/yangsan-house/07.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/12.png",
+          "alt_text": "양산주택 인테리어 04",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 4,
+          "source_path": "./images/built/yangsan-house/12.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/14.png",
+          "alt_text": "양산주택 인테리어 05",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 5,
+          "source_path": "./images/built/yangsan-house/14.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/15.png",
+          "alt_text": "양산주택 인테리어 06",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 6,
+          "source_path": "./images/built/yangsan-house/15.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/16.png",
+          "alt_text": "양산주택 인테리어 07",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 7,
+          "source_path": "./images/built/yangsan-house/16.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/17.png",
+          "alt_text": "양산주택 인테리어 08",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 8,
+          "source_path": "./images/built/yangsan-house/17.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/18.png",
+          "alt_text": "양산주택 인테리어 09",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 9,
+          "source_path": "./images/built/yangsan-house/18.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/06.png",
+          "alt_text": "양산주택 인테리어 10",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 10,
+          "source_path": "./images/built/yangsan-house/06.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/03.png",
+          "alt_text": "양산주택 인테리어 11",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 11,
+          "source_path": "./images/built/yangsan-house/03.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/04.png",
+          "alt_text": "양산주택 인테리어 12",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 12,
+          "source_path": "./images/built/yangsan-house/04.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/05.png",
+          "alt_text": "양산주택 인테리어 13",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 13,
+          "source_path": "./images/built/yangsan-house/05.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/08.png",
+          "alt_text": "양산주택 인테리어 14",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 14,
+          "source_path": "./images/built/yangsan-house/08.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/09.png",
+          "alt_text": "양산주택 인테리어 15",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 15,
+          "source_path": "./images/built/yangsan-house/09.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/10.png",
+          "alt_text": "양산주택 인테리어 16",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 16,
+          "source_path": "./images/built/yangsan-house/10.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/11.png",
+          "alt_text": "양산주택 인테리어 17",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 17,
+          "source_path": "./images/built/yangsan-house/11.png"
+        },
+        {
+          "image_url": "./images/built/yangsan-house/13.png",
+          "alt_text": "양산주택 인테리어 18",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 18,
+          "source_path": "./images/built/yangsan-house/13.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-hanwoo-midam",
+      "name": "한우미담",
+      "name_en": "HANWOO MIDAM",
+      "slug": "hanwoo-midam",
+      "project_type": "BUILT",
+      "year": 2021,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "짙은 외관과 따뜻한 조명, 테라스의 여유가 어우러져 식사의 기대를 높이는 다이닝 공간.",
+      "intro_title": "따뜻한 빛으로 식사의 시간을 맞이하다.",
+      "detail_description": "어두운 외관 위로 번지는 조명이 입구와 건물의 윤곽을 드러냅니다. 유리면과 야외 공간이 이어지며 저녁의 식사 풍경에 깊이를 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/hanwoo-midam/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "한우미담 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 8,
+      "legacy_path": "project-built-hanwoo-midam.html",
+      "images": [
+        {
+          "image_url": "./images/built/hanwoo-midam/01.png",
+          "alt_text": "한우미담 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/hanwoo-midam/01.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/03.png",
+          "alt_text": "한우미담 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/hanwoo-midam/03.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/09.png",
+          "alt_text": "한우미담 인테리어 03",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 3,
+          "source_path": "./images/built/hanwoo-midam/09.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/04.png",
+          "alt_text": "한우미담 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/hanwoo-midam/04.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/05.png",
+          "alt_text": "한우미담 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/hanwoo-midam/05.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/06.png",
+          "alt_text": "한우미담 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/hanwoo-midam/06.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/07.png",
+          "alt_text": "한우미담 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/hanwoo-midam/07.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/08.png",
+          "alt_text": "한우미담 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/hanwoo-midam/08.png"
+        },
+        {
+          "image_url": "./images/built/hanwoo-midam/02.png",
+          "alt_text": "한우미담 인테리어 09",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 9,
+          "source_path": "./images/built/hanwoo-midam/02.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-daeyeon-house",
+      "name": "대연동 주택",
+      "name_en": "DAEYEON HOUSE",
+      "slug": "daeyeon-house",
+      "project_type": "BUILT",
+      "year": 2020,
+      "location": "대한민국",
+      "category": "RESIDENTIAL",
+      "short_description": "단정한 외벽의 선과 깊이 있는 창의 배치로 주택의 차분한 인상을 완성한 공간.",
+      "intro_title": "도시의 일상에 차분한 표정을 더하다.",
+      "detail_description": "외벽의 절제된 색감과 창의 반복이 입면에 리듬을 만듭니다. 진입부부터 이어지는 단단한 재료의 표정이 주거 공간의 첫인상을 정돈합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/daeyeon-house/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "유리 파티션과 목재 수납이 있는 공간",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 9,
+      "legacy_path": "project-built-daeyeon-house.html",
+      "images": [
+        {
+          "image_url": "./images/built/daeyeon-house/updated-01.png",
+          "alt_text": "대연동 주택 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/daeyeon-house/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-02.png",
+          "alt_text": "대연동 주택 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/daeyeon-house/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-06.png",
+          "alt_text": "대연동 주택 인테리어 03",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 3,
+          "source_path": "./images/built/daeyeon-house/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-10.png",
+          "alt_text": "대연동 주택 인테리어 04",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 4,
+          "source_path": "./images/built/daeyeon-house/updated-10.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-03.png",
+          "alt_text": "대연동 주택 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/daeyeon-house/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-04.png",
+          "alt_text": "대연동 주택 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/daeyeon-house/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-05.png",
+          "alt_text": "대연동 주택 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/daeyeon-house/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-07.png",
+          "alt_text": "대연동 주택 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/daeyeon-house/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-08.png",
+          "alt_text": "대연동 주택 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/daeyeon-house/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/daeyeon-house/updated-09.png",
+          "alt_text": "대연동 주택 인테리어 10",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 10,
+          "source_path": "./images/built/daeyeon-house/updated-09.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-geumsaem-library",
+      "name": "금샘도서관",
+      "name_en": "GEUMSAEM LIBRARY",
+      "slug": "geumsaem-library",
+      "project_type": "BUILT",
+      "year": 2020,
+      "location": "대한민국",
+      "category": "CULTURAL",
+      "short_description": "리듬감 있는 외벽과 넓은 유리면, 열린 진입 공간이 배움의 일상으로 이어지는 도서관.",
+      "intro_title": "책과 도시가 만나는 열린 풍경.",
+      "detail_description": "밝은 외벽 위로 반복되는 창과 수직선이 건물의 표정을 만듭니다. 유리면 너머의 공간과 넉넉한 진입부가 도시의 풍경과 도서관을 자연스럽게 연결합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/geumsaem-library/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "금샘도서관 대표 사진",
+      "is_home_featured": true,
+      "home_order": 3,
+      "sort_order": 10,
+      "legacy_path": "project-built-geumsaem-library.html",
+      "images": [
+        {
+          "image_url": "./images/built/geumsaem-library/01.png",
+          "alt_text": "금샘도서관 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/geumsaem-library/01.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/02.png",
+          "alt_text": "금샘도서관 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/geumsaem-library/02.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/03.png",
+          "alt_text": "금샘도서관 인테리어 03",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 3,
+          "source_path": "./images/built/geumsaem-library/03.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/04.png",
+          "alt_text": "금샘도서관 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/geumsaem-library/04.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/05.png",
+          "alt_text": "금샘도서관 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/geumsaem-library/05.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/06.png",
+          "alt_text": "금샘도서관 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/geumsaem-library/06.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/07.png",
+          "alt_text": "금샘도서관 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/geumsaem-library/07.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/08.png",
+          "alt_text": "금샘도서관 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/geumsaem-library/08.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/09.png",
+          "alt_text": "금샘도서관 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/geumsaem-library/09.png"
+        },
+        {
+          "image_url": "./images/built/geumsaem-library/10.png",
+          "alt_text": "금샘도서관 인테리어 10",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 10,
+          "source_path": "./images/built/geumsaem-library/10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-jeonpo-salon",
+      "name": "전포동 미용실",
+      "name_en": "JEONPO HAIR SALON",
+      "slug": "jeonpo-salon",
+      "project_type": "BUILT",
+      "year": 2019,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "크림 톤의 카운터와 간결한 우드 디테일, 부드러운 빛으로 첫인상을 정돈한 헤어 살롱.",
+      "intro_title": "부드러운 색감으로 맞이하는 변화의 시간.",
+      "detail_description": "입구에서 마주하는 카운터와 낮은 채도의 벽면이 차분한 분위기를 만듭니다. 간결한 선과 밝은 마감이 어우러져 작은 공간에도 여유로운 인상을 남깁니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/jeonpo-salon/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "중앙 시술석과 우드 프레임 거울",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 11,
+      "legacy_path": "project-built-jeonpo-salon.html",
+      "images": [
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-01.png",
+          "alt_text": "전포동 미용실 대표 사진",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 1,
+          "source_path": "./images/built/jeonpo-salon/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-07.png",
+          "alt_text": "전포동 미용실 인테리어 02",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 2,
+          "source_path": "./images/built/jeonpo-salon/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-04.png",
+          "alt_text": "전포동 미용실 인테리어 03",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 3,
+          "source_path": "./images/built/jeonpo-salon/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-02.png",
+          "alt_text": "전포동 미용실 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/jeonpo-salon/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-03.png",
+          "alt_text": "전포동 미용실 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/jeonpo-salon/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-05.png",
+          "alt_text": "전포동 미용실 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/jeonpo-salon/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-06.png",
+          "alt_text": "전포동 미용실 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/jeonpo-salon/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-08.png",
+          "alt_text": "전포동 미용실 인테리어 08",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 8,
+          "source_path": "./images/built/jeonpo-salon/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-09.png",
+          "alt_text": "전포동 미용실 인테리어 09",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 9,
+          "source_path": "./images/built/jeonpo-salon/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/jeonpo-salon/updated-10.png",
+          "alt_text": "전포동 미용실 인테리어 10",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 10,
+          "source_path": "./images/built/jeonpo-salon/updated-10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-science-cafe",
+      "name": "사이언스파크 카페",
+      "name_en": "SCIENCE PARK CAFE",
+      "slug": "science-cafe",
+      "project_type": "BUILT",
+      "year": 2019,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "회색 마감과 따뜻한 목재, 길게 이어지는 카운터가 어우러진 카페.",
+      "intro_title": "재료의 대비 위에 머무는 여유.",
+      "detail_description": "단정한 회색 벽면과 목재 테이블이 서로 다른 질감을 드러냅니다. 카운터를 중심으로 펼쳐지는 좌석과 은은한 조명이 머무는 풍경을 완성합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/science-cafe/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "높은 천장과 길게 이어지는 카페 좌석",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 12,
+      "legacy_path": "project-built-science-cafe.html",
+      "images": [
+        {
+          "image_url": "./images/built/science-cafe/updated-01.png",
+          "alt_text": "사이언스파크 카페 대표 사진",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 1,
+          "source_path": "./images/built/science-cafe/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-02.png",
+          "alt_text": "사이언스파크 카페 인테리어 02",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 2,
+          "source_path": "./images/built/science-cafe/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-03.png",
+          "alt_text": "사이언스파크 카페 인테리어 03",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 3,
+          "source_path": "./images/built/science-cafe/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-04.png",
+          "alt_text": "사이언스파크 카페 인테리어 04",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 4,
+          "source_path": "./images/built/science-cafe/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-05.png",
+          "alt_text": "사이언스파크 카페 인테리어 05",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 5,
+          "source_path": "./images/built/science-cafe/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-06.png",
+          "alt_text": "사이언스파크 카페 인테리어 06",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 6,
+          "source_path": "./images/built/science-cafe/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-07.png",
+          "alt_text": "사이언스파크 카페 인테리어 07",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 7,
+          "source_path": "./images/built/science-cafe/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-08.png",
+          "alt_text": "사이언스파크 카페 인테리어 08",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 8,
+          "source_path": "./images/built/science-cafe/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-09.png",
+          "alt_text": "사이언스파크 카페 인테리어 09",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 9,
+          "source_path": "./images/built/science-cafe/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/science-cafe/updated-10.png",
+          "alt_text": "사이언스파크 카페 인테리어 10",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 10,
+          "source_path": "./images/built/science-cafe/updated-10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-the-golf",
+      "name": "더골프 클럽하우스",
+      "name_en": "THE GOLF CLUBHOUSE",
+      "slug": "the-golf",
+      "project_type": "BUILT",
+      "year": 2019,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "낮게 펼쳐진 건물의 선과 넓은 유리면, 따뜻한 조명이 방문객을 맞이하는 클럽하우스.",
+      "intro_title": "라운드의 시작과 끝을 품는 공간.",
+      "detail_description": "수평으로 이어지는 외관과 입체적인 지붕선이 건물의 인상을 만듭니다. 해가 진 뒤에는 유리 너머의 빛이 드러나며 진입 공간에 온기를 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/the-golf/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "더골프 클럽하우스 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 13,
+      "legacy_path": "project-built-the-golf.html",
+      "images": [
+        {
+          "image_url": "./images/built/the-golf/updated-01.png",
+          "alt_text": "더골프 클럽하우스 대표 사진",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 1,
+          "source_path": "./images/built/the-golf/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-03.png",
+          "alt_text": "더골프 클럽하우스 인테리어 02",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 2,
+          "source_path": "./images/built/the-golf/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-02.png",
+          "alt_text": "더골프 클럽하우스 인테리어 03",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 3,
+          "source_path": "./images/built/the-golf/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-09.png",
+          "alt_text": "더골프 클럽하우스 인테리어 04",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 4,
+          "source_path": "./images/built/the-golf/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-10.png",
+          "alt_text": "더골프 클럽하우스 인테리어 05",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 5,
+          "source_path": "./images/built/the-golf/updated-10.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-04.png",
+          "alt_text": "더골프 클럽하우스 인테리어 06",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 6,
+          "source_path": "./images/built/the-golf/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-05.png",
+          "alt_text": "더골프 클럽하우스 인테리어 07",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 7,
+          "source_path": "./images/built/the-golf/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-06.png",
+          "alt_text": "더골프 클럽하우스 인테리어 08",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 8,
+          "source_path": "./images/built/the-golf/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-07.png",
+          "alt_text": "더골프 클럽하우스 인테리어 09",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 9,
+          "source_path": "./images/built/the-golf/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/the-golf/updated-08.png",
+          "alt_text": "더골프 클럽하우스 인테리어 10",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 10,
+          "source_path": "./images/built/the-golf/updated-08.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-isaem",
+      "name": "이샘 병원",
+      "name_en": "ISAEM",
+      "slug": "isaem",
+      "project_type": "BUILT",
+      "year": 2016,
+      "location": "대한민국",
+      "category": "HEALTHCARE",
+      "short_description": "밝은 마감과 부드러운 곡선의 대기 좌석, 명료한 동선이 어우러진 의료 공간.",
+      "intro_title": "머무는 순간까지 편안한 의료 공간.",
+      "detail_description": "넓은 로비에 배치한 원형 좌석이 대기 공간의 중심을 잡습니다. 밝은 바닥과 따뜻한 조명, 유리 너머로 이어지는 시선이 공간에 편안한 개방감을 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/isaem/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "이샘 병원 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 14,
+      "legacy_path": "project-built-isaem.html",
+      "images": [
+        {
+          "image_url": "./images/built/isaem/01.png",
+          "alt_text": "이샘 병원 대표 사진",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 1,
+          "source_path": "./images/built/isaem/01.png"
+        },
+        {
+          "image_url": "./images/built/isaem/02.png",
+          "alt_text": "이샘 병원 인테리어 02",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 2,
+          "source_path": "./images/built/isaem/02.png"
+        },
+        {
+          "image_url": "./images/built/isaem/03.png",
+          "alt_text": "이샘 병원 인테리어 03",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 3,
+          "source_path": "./images/built/isaem/03.png"
+        },
+        {
+          "image_url": "./images/built/isaem/08.png",
+          "alt_text": "이샘 병원 인테리어 04",
+          "width": 1024,
+          "height": 1536,
+          "sort_order": 4,
+          "source_path": "./images/built/isaem/08.png"
+        },
+        {
+          "image_url": "./images/built/isaem/09.png",
+          "alt_text": "이샘 병원 인테리어 05",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 5,
+          "source_path": "./images/built/isaem/09.png"
+        },
+        {
+          "image_url": "./images/built/isaem/04.png",
+          "alt_text": "이샘 병원 인테리어 06",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 6,
+          "source_path": "./images/built/isaem/04.png"
+        },
+        {
+          "image_url": "./images/built/isaem/05.png",
+          "alt_text": "이샘 병원 인테리어 07",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 7,
+          "source_path": "./images/built/isaem/05.png"
+        },
+        {
+          "image_url": "./images/built/isaem/06.png",
+          "alt_text": "이샘 병원 인테리어 08",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 8,
+          "source_path": "./images/built/isaem/06.png"
+        },
+        {
+          "image_url": "./images/built/isaem/07.png",
+          "alt_text": "이샘 병원 인테리어 09",
+          "width": 1448,
+          "height": 1086,
+          "sort_order": 9,
+          "source_path": "./images/built/isaem/07.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-terrace-one",
+      "name": "테라스원",
+      "name_en": "TERRACE ONE",
+      "slug": "terrace-one",
+      "project_type": "BUILT",
+      "year": 2015,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "우드 데크와 식재, 테라스 위로 번지는 조명이 도심 속 여유를 만드는 다이닝 공간.",
+      "intro_title": "도시의 밤을 품은 열린 테라스.",
+      "detail_description": "야외 좌석과 실내의 빛이 유리면을 사이에 두고 이어집니다. 목재의 따뜻한 질감과 식재가 어우러져 저녁의 도시 풍경에 편안한 머무름을 더합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/terrace-one/01.png",
+      "cover_storage_path": null,
+      "cover_alt": "테라스원 대표 사진",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 15,
+      "legacy_path": "project-built-terrace-one.html",
+      "images": [
+        {
+          "image_url": "./images/built/terrace-one/01.png",
+          "alt_text": "테라스원 대표 사진",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 1,
+          "source_path": "./images/built/terrace-one/01.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/02.png",
+          "alt_text": "테라스원 인테리어 02",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 2,
+          "source_path": "./images/built/terrace-one/02.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/03.png",
+          "alt_text": "테라스원 인테리어 03",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 3,
+          "source_path": "./images/built/terrace-one/03.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/04.png",
+          "alt_text": "테라스원 인테리어 04",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 4,
+          "source_path": "./images/built/terrace-one/04.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/05.png",
+          "alt_text": "테라스원 인테리어 05",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 5,
+          "source_path": "./images/built/terrace-one/05.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/06.png",
+          "alt_text": "테라스원 인테리어 06",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 6,
+          "source_path": "./images/built/terrace-one/06.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/07.png",
+          "alt_text": "테라스원 인테리어 07",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 7,
+          "source_path": "./images/built/terrace-one/07.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/08.png",
+          "alt_text": "테라스원 인테리어 08",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 8,
+          "source_path": "./images/built/terrace-one/08.png"
+        },
+        {
+          "image_url": "./images/built/terrace-one/09.png",
+          "alt_text": "테라스원 인테리어 09",
+          "width": 1536,
+          "height": 1024,
+          "sort_order": 9,
+          "source_path": "./images/built/terrace-one/09.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-table-moon",
+      "name": "테이블온더문",
+      "name_en": "TABLE ON THE MOON",
+      "slug": "table-moon",
+      "project_type": "BUILT",
+      "year": 2014,
+      "location": "대한민국",
+      "category": "COMMERCIAL",
+      "short_description": "블랙 프레임과 우드의 대비, 유리 너머로 이어지는 장면이 식사의 분위기를 만드는 공간.",
+      "intro_title": "도시의 한편에 펼쳐지는 다이닝.",
+      "detail_description": "짙은 프레임이 입구와 유리면의 윤곽을 또렷하게 잡아줍니다. 따뜻한 목재와 조명이 바깥에서도 느껴지는 다이닝의 표정을 완성합니다.",
+      "project_scope": "인테리어 시공",
+      "cover_image_url": "./images/built/table-moon/updated-01.png",
+      "cover_storage_path": null,
+      "cover_alt": "벽돌과 블랙 프레임이 있는 다이닝 홀",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 16,
+      "legacy_path": "project-built-table-moon.html",
+      "images": [
+        {
+          "image_url": "./images/built/table-moon/updated-01.png",
+          "alt_text": "테이블온더문 대표 사진",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 1,
+          "source_path": "./images/built/table-moon/updated-01.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-02.png",
+          "alt_text": "테이블온더문 인테리어 02",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 2,
+          "source_path": "./images/built/table-moon/updated-02.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-04.png",
+          "alt_text": "테이블온더문 인테리어 03",
+          "width": 941,
+          "height": 1672,
+          "sort_order": 3,
+          "source_path": "./images/built/table-moon/updated-04.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-05.png",
+          "alt_text": "테이블온더문 인테리어 04",
+          "width": 941,
+          "height": 1672,
+          "sort_order": 4,
+          "source_path": "./images/built/table-moon/updated-05.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-06.png",
+          "alt_text": "테이블온더문 인테리어 05",
+          "width": 941,
+          "height": 1672,
+          "sort_order": 5,
+          "source_path": "./images/built/table-moon/updated-06.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-03.png",
+          "alt_text": "테이블온더문 인테리어 06",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 6,
+          "source_path": "./images/built/table-moon/updated-03.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-09.png",
+          "alt_text": "테이블온더문 인테리어 07",
+          "width": 1086,
+          "height": 1448,
+          "sort_order": 7,
+          "source_path": "./images/built/table-moon/updated-09.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-07.png",
+          "alt_text": "테이블온더문 인테리어 08",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 8,
+          "source_path": "./images/built/table-moon/updated-07.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-08.png",
+          "alt_text": "테이블온더문 인테리어 09",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 9,
+          "source_path": "./images/built/table-moon/updated-08.png"
+        },
+        {
+          "image_url": "./images/built/table-moon/updated-10.png",
+          "alt_text": "테이블온더문 인테리어 10",
+          "width": 1672,
+          "height": 941,
+          "sort_order": 10,
+          "source_path": "./images/built/table-moon/updated-10.png"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-residential",
+      "name": "마리나 듀플렉스 펜트하우스",
+      "name_en": "MARINA DUPLEX PENTHOUSE",
+      "slug": "residential",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "RESIDENTIAL",
+      "short_description": "복층의 구조감과 항구 조망, 월넛과 대리석의 차분한 재료감을 하나의 언어로 완성한 하이엔드 레지던스.",
+      "intro_title": "수평선과 생활의 장면을 하나로 잇다.",
+      "detail_description": "탁 트인 조망과 복층의 구조감을 공간의 중심에 두었습니다. 월넛, 회색 대리석, 브론즈와 낮은 채도의 패브릭을 일관되게 사용해 거대한 스케일 안에서도 차분한 거주감을 유지합니다. 거실과 다이닝, 서재, 침실과 테라스는 서로 다른 기능을 가지면서도 하나의 재료와 빛의 언어로 이어집니다.",
+      "project_scope": "CONCEPT DESIGN STUDY",
+      "cover_image_url": "./images/residential-large.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "항구를 바라보는 복층 펜트하우스의 거실 전경",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 17,
+      "legacy_path": "project-residential.html",
+      "images": [
+        {
+          "image_url": "./images/projects/residential/01.jpg",
+          "alt_text": "더블 하이트 거실과 중앙 벽난로",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/residential/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/02.jpg",
+          "alt_text": "거실에서 다이닝과 주방을 바라본 전경",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/residential/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/03.jpg",
+          "alt_text": "브론즈 난간과 간접조명이 적용된 계단",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/residential/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/04.jpg",
+          "alt_text": "항구 조망을 향해 열린 다이닝룸",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/residential/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/05.jpg",
+          "alt_text": "월넛 수납벽과 대리석 벽난로가 있는 프라이빗 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/residential/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/06.jpg",
+          "alt_text": "야경을 품은 마스터 베드룸",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/residential/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/07.jpg",
+          "alt_text": "대리석과 월넛으로 마감한 스파 욕실",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/residential/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/08.jpg",
+          "alt_text": "월넛과 회색 대리석의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/residential/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/residential/09.jpg",
+          "alt_text": "거실과 이어지는 항구 전망 테라스",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/residential/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-hospitality",
+      "name": "더 아트리움 그랜드 호텔",
+      "name_en": "THE ATRIUM GRAND HOTEL",
+      "slug": "hospitality",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "HOSPITALITY",
+      "short_description": "그랜드 로비부터 라운지와 다이닝까지 석재와 브론즈의 일관된 디테일로 환대의 경험을 설계한 호텔.",
+      "intro_title": "머무는 시간 전체가 하나의 환대가 되도록.",
+      "detail_description": "거대한 아트리움의 비례와 동선을 먼저 세우고, 리셉션에서 라운지, 다이닝과 객실층으로 이어지는 경험을 정교하게 설계했습니다. 크림 톤의 석재와 브론즈, 짙은 목재를 반복해 서로 다른 기능의 공간에서도 호텔 고유의 인상이 끊기지 않도록 완성했습니다.",
+      "project_scope": "CONCEPT DESIGN STUDY",
+      "cover_image_url": "./images/hotel-commercial.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "대형 석재 기둥과 라운지를 갖춘 그랜드 호텔 로비",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 18,
+      "legacy_path": "project-hospitality.html",
+      "images": [
+        {
+          "image_url": "./images/projects/hospitality/01.jpg",
+          "alt_text": "석재 기둥과 대형 라운지가 있는 그랜드 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/hospitality/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/02.jpg",
+          "alt_text": "텍스처 스톤월과 브론즈 핀으로 완성한 리셉션",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/hospitality/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/03.jpg",
+          "alt_text": "조형 조명이 내려오는 다층 아트리움 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/hospitality/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/04.jpg",
+          "alt_text": "브론즈 프레임과 샹들리에가 있는 도착 공간",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/hospitality/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/05.jpg",
+          "alt_text": "월넛과 브론즈로 구성한 호텔 레스토랑",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/hospitality/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/06.jpg",
+          "alt_text": "아트워크가 이어지는 객실층 복도",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/hospitality/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/07.jpg",
+          "alt_text": "서가와 낮은 가구로 구성한 이그제큐티브 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/hospitality/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/08.jpg",
+          "alt_text": "코퍼 천장 리듬이 이어지는 엘리베이터 홀",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/hospitality/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/hospitality/09.jpg",
+          "alt_text": "석재와 브론즈 수직 핀의 마감 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/hospitality/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-architecture",
+      "name": "해온 코스탈 리조트",
+      "name_en": "HAEON COASTAL RESORT",
+      "slug": "architecture",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "ARCHITECTURE",
+      "short_description": "해안의 수평선과 두 개의 건축 매스, 깊은 처마와 소나무 조경을 연결한 대형 리조트.",
+      "intro_title": "대지의 풍경이 건축의 표정이 되다.",
+      "detail_description": "바다와 산이 만나는 대지의 수평선을 따라 두 개의 매스를 배치하고, 낮은 포디움과 깊은 처마로 사람의 스케일을 만들었습니다. 밝은 석재와 브론즈 커튼월, 한국적 소나무 조경과 수공간이 입면의 반복적인 리듬을 부드럽게 연결합니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/architecture-hotel.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "해안과 정원을 품은 대규모 리조트 호텔의 야간 전경",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 19,
+      "legacy_path": "project-architecture.html",
+      "images": [
+        {
+          "image_url": "./images/projects/architecture/01.jpg",
+          "alt_text": "해 질 무렵 바라본 리조트의 전체 전경",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/architecture/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/02.jpg",
+          "alt_text": "수공간에서 바라본 주 출입 입면",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/architecture/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/03.jpg",
+          "alt_text": "깊은 처마가 강조된 포르트 코셰르",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/architecture/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/04.jpg",
+          "alt_text": "바다에서 바라본 리조트의 해안 측 입면",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/architecture/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/05.jpg",
+          "alt_text": "소나무 정원과 두 동을 잇는 중앙 중정",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/architecture/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/06.jpg",
+          "alt_text": "수영장과 객실 발코니가 이어지는 테라스 입면",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/architecture/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/07.jpg",
+          "alt_text": "석재와 유리 발코니가 반복되는 파사드 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/architecture/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/08.jpg",
+          "alt_text": "조경 조명이 켜진 야간 정원 전경",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/architecture/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/architecture/09.jpg",
+          "alt_text": "해안과 산을 함께 담은 리조트의 원경",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/architecture/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-signature-residence",
+      "name": "해운대 시그니처 레지던스",
+      "name_en": "HAEUNDAE SIGNATURE RESIDENCE",
+      "slug": "signature-residence",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "RESIDENTIAL",
+      "short_description": "은빛 트래버틴과 브론즈, 바다의 빛으로 완성한 랜드마크 타워의 초대형 레지던스.",
+      "intro_title": "수평선과 수직의 질서를 동시에 담다.",
+      "detail_description": "은빛 트래버틴과 스모크드 오크, 샴페인 브론즈를 공간 전체에 반복해 거대한 복층의 비례를 하나로 묶었습니다. 갤러리 홀에서 다이닝, 라이브러리와 마스터 스위트, 테라스까지 바다의 빛이 깊숙이 이어집니다.",
+      "project_scope": "CONCEPT DESIGN STUDY",
+      "cover_image_url": "./images/projects/signature-residence/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "바다를 향해 열린 초대형 복층 레지던스 거실",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 20,
+      "legacy_path": "project-signature-residence.html",
+      "images": [
+        {
+          "image_url": "./images/projects/signature-residence/01.jpg",
+          "alt_text": "바다를 향해 열린 더블 하이트 메인 살롱",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/signature-residence/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/02.jpg",
+          "alt_text": "오션뷰로 이어지는 프라이빗 갤러리 홀",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/signature-residence/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/03.jpg",
+          "alt_text": "브론즈 난간의 조형 계단과 복층 보이드",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/signature-residence/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/04.jpg",
+          "alt_text": "대형 다이닝 살롱과 셰프 키친",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/signature-residence/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/05.jpg",
+          "alt_text": "스모크드 오크로 완성한 프라이빗 라이브러리",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/signature-residence/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/06.jpg",
+          "alt_text": "오션뷰 마스터 베드룸 스위트",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/signature-residence/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/07.jpg",
+          "alt_text": "트래버틴으로 구성한 마스터 스파 욕실",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/signature-residence/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/08.jpg",
+          "alt_text": "오크와 트래버틴, 브론즈의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/signature-residence/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/signature-residence/09.jpg",
+          "alt_text": "석양과 수공간을 품은 오션 테라스",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/signature-residence/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-forest-resort",
+      "name": "설악 포레스트 리트리트",
+      "name_en": "SEORAK FOREST RETREAT",
+      "slug": "forest-resort",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "HOSPITALITY",
+      "short_description": "현지 화강석과 짙은 목재, 안개 낀 소나무 숲의 장면을 연결한 대형 산악 리조트.",
+      "intro_title": "숲의 시간을 건축 안으로 들이다.",
+      "detail_description": "현지 화강석의 거친 표면과 짙은 삼나무 구조, 낮은 색온도의 빛을 일관되게 사용했습니다. 도착 정원과 거대한 벽난로 로비, 다이닝과 스파, 객실 테라스가 안개 낀 소나무 숲을 향해 차분히 열립니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/forest-resort/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "안개 낀 숲으로 열린 대형 산악 리조트 로비",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 21,
+      "legacy_path": "project-forest-resort.html",
+      "images": [
+        {
+          "image_url": "./images/projects/forest-resort/01.jpg",
+          "alt_text": "안개 낀 숲으로 열린 대형 리조트 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/forest-resort/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/02.jpg",
+          "alt_text": "깊은 처마와 화강석 벽의 리조트 진입부",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/forest-resort/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/03.jpg",
+          "alt_text": "통석 리셉션과 소나무 중정",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/forest-resort/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/04.jpg",
+          "alt_text": "대형 화강석 벽난로가 있는 로비 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/forest-resort/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/05.jpg",
+          "alt_text": "숲을 바라보는 리조트 시그니처 다이닝",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/forest-resort/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/06.jpg",
+          "alt_text": "전용 로지아와 벽난로가 있는 객실 스위트",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/forest-resort/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/07.jpg",
+          "alt_text": "암석 정원으로 열린 테라피 스파 풀",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/forest-resort/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/08.jpg",
+          "alt_text": "목재와 화강석, 브론즈의 복도 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/forest-resort/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/forest-resort/09.jpg",
+          "alt_text": "숲속 화로를 품은 리조트 테라스",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/forest-resort/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-convention-center",
+      "name": "부산 베이 컨벤션 센터",
+      "name_en": "BUSAN BAY CONVENTION CENTER",
+      "slug": "convention-center",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "PUBLIC",
+      "short_description": "대형 연회장과 오디토리움, 항구 전망 포이어를 하나의 공공 동선으로 연결한 복합시설.",
+      "intro_title": "거대한 흐름을 명료한 질서로 바꾸다.",
+      "detail_description": "장거리 스팬의 포이어와 대형 연회장, 오디토리움, 회의실을 밝은 석회석과 타공 브론즈의 리듬으로 연결했습니다. 규모가 큰 집회시설에서도 방문자가 목적지를 직관적으로 이해하고 바다를 계속 경험하도록 동선을 설계했습니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/convention-center/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "바다를 향해 열린 대형 컨벤션 센터 그랜드 포이어",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 22,
+      "legacy_path": "project-convention-center.html",
+      "images": [
+        {
+          "image_url": "./images/projects/convention-center/01.jpg",
+          "alt_text": "항구를 향해 열린 컨벤션 센터 그랜드 포이어",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/convention-center/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/02.jpg",
+          "alt_text": "석회석과 브론즈 캐노피의 전체 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/convention-center/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/03.jpg",
+          "alt_text": "타공 브론즈 천장의 대형 그랜드 볼룸",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/convention-center/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/04.jpg",
+          "alt_text": "대규모 공연과 회의를 위한 오디토리움",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/convention-center/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/05.jpg",
+          "alt_text": "항구 조망을 따라 이어지는 프리펑션 갤러리",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/convention-center/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/06.jpg",
+          "alt_text": "브론즈 스크린으로 구획한 VIP 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/convention-center/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/07.jpg",
+          "alt_text": "바다를 바라보는 대형 컨퍼런스 룸",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/convention-center/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/08.jpg",
+          "alt_text": "석회석 계단과 타공 브론즈 난간 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/convention-center/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/convention-center/09.jpg",
+          "alt_text": "수공간에 반사된 컨벤션 센터의 야경",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/convention-center/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-executive-office",
+      "name": "센텀 이그제큐티브 캠퍼스",
+      "name_en": "CENTUM EXECUTIVE CAMPUS",
+      "slug": "executive-office",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "WORKPLACE",
+      "short_description": "다층 아트리움과 실내 정원, 보드룸과 타운홀을 연결한 대규모 프리미엄 기업 본사.",
+      "intro_title": "업무의 속도와 휴식의 밀도를 함께 설계하다.",
+      "detail_description": "그래파이트 스톤과 스모크드 오크, 블랙 스틸의 무게감에 성숙한 실내 조경을 더했습니다. 메인 아트리움과 업무층, 보드룸, 타운홀과 루프탑까지 조직의 다양한 활동이 하나의 건축 언어 안에서 이어집니다.",
+      "project_scope": "CONCEPT DESIGN STUDY",
+      "cover_image_url": "./images/projects/executive-office/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "실내 정원을 품은 대형 기업 본사 아트리움",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 23,
+      "legacy_path": "project-executive-office.html",
+      "images": [
+        {
+          "image_url": "./images/projects/executive-office/01.jpg",
+          "alt_text": "실내 정원을 품은 대형 기업 본사 아트리움",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/executive-office/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/02.jpg",
+          "alt_text": "조경 진입로와 깊은 캐노피의 본사 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/executive-office/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/03.jpg",
+          "alt_text": "브리지에서 내려다본 리셉션과 아트리움",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/executive-office/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/04.jpg",
+          "alt_text": "도시를 바라보는 메인 이그제큐티브 보드룸",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/executive-office/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/05.jpg",
+          "alt_text": "내부 정원을 중심으로 구성한 대형 업무층",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/executive-office/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/06.jpg",
+          "alt_text": "복층으로 열린 기업 타운홀과 오디토리움",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/executive-office/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/07.jpg",
+          "alt_text": "스모크드 오크로 완성한 이그제큐티브 오피스",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/executive-office/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/08.jpg",
+          "alt_text": "블랙 스틸과 현무암 계단의 마감 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/executive-office/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/executive-office/09.jpg",
+          "alt_text": "도시 야경을 품은 본사 루프탑 정원",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/executive-office/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-archive-flagship",
+      "name": "더 아카이브 플래그십",
+      "name_en": "THE ARCHIVE FLAGSHIP",
+      "slug": "archive-flagship",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "COMMERCIAL",
+      "short_description": "세 개 층의 리테일과 전시, 프라이빗 살롱을 조형 계단으로 엮은 글로벌 플래그십.",
+      "intro_title": "판매 공간을 도시의 문화 장면으로 확장하다.",
+      "detail_description": "밝은 석회석의 수직 프레임과 새틴 스테인리스, 반투명 유리의 가벼움을 대비시키고 짙은 옥스블러드 컬러를 시그니처로 사용했습니다. 중앙 아트리움과 조형 계단이 세 개 층의 리테일과 전시 경험을 연결합니다.",
+      "project_scope": "INTERIOR FACADE",
+      "cover_image_url": "./images/projects/archive-flagship/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "조형 계단이 중심이 되는 3개 층 규모의 플래그십 아트리움",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 24,
+      "legacy_path": "project-archive-flagship.html",
+      "images": [
+        {
+          "image_url": "./images/projects/archive-flagship/01.jpg",
+          "alt_text": "조형 계단을 중심으로 한 3개 층 플래그십",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/archive-flagship/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/02.jpg",
+          "alt_text": "반투명 유리와 석회석 프레임의 도시 파사드",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/archive-flagship/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/03.jpg",
+          "alt_text": "중앙 아트리움으로 이어지는 엔트런스 갤러리",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/archive-flagship/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/04.jpg",
+          "alt_text": "아트리움을 내려다보는 상층 컬렉션 갤러리",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/archive-flagship/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/05.jpg",
+          "alt_text": "조형 석재 계단 아래의 프라이빗 살롱",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/archive-flagship/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/06.jpg",
+          "alt_text": "옥스블러드 컬러의 프라이빗 클라이언트 룸",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/archive-flagship/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/07.jpg",
+          "alt_text": "뮤지엄 규모의 이벤트·전시 공간",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/archive-flagship/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/08.jpg",
+          "alt_text": "석회석과 래커, 스테인리스의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/archive-flagship/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/archive-flagship/09.jpg",
+          "alt_text": "젖은 광장에 반사된 플래그십의 야경",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/archive-flagship/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-wellness-center",
+      "name": "오션 메디컬 웰니스 센터",
+      "name_en": "OCEAN MEDICAL WELLNESS CENTER",
+      "slug": "wellness-center",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "HEALTHCARE",
+      "short_description": "진료와 테라피, 회복의 전 과정을 정원과 수공간으로 연결한 대형 통합 웰니스 센터.",
+      "intro_title": "치유의 과정에서 공간의 긴장을 덜어내다.",
+      "detail_description": "크림 트래버틴과 밝은 오크, 리브드 글라스로 시각적 긴장을 낮추고 올리브 정원과 수공간을 곳곳에 배치했습니다. 진료와 테라피, 회복, 휴식의 동선은 분명히 나누되 공간의 인상은 하나로 이어집니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/wellness-center/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "올리브 정원과 수공간을 품은 대형 메디컬 웰니스 로비",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 25,
+      "legacy_path": "project-wellness-center.html",
+      "images": [
+        {
+          "image_url": "./images/projects/wellness-center/01.jpg",
+          "alt_text": "올리브 정원과 수공간을 품은 메디컬 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/wellness-center/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/02.jpg",
+          "alt_text": "트래버틴과 반투명 유리로 구성한 센터 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/wellness-center/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/03.jpg",
+          "alt_text": "중앙 정원을 바라보는 곡면 리셉션",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/wellness-center/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/04.jpg",
+          "alt_text": "정원 빛이 들어오는 프라이빗 상담 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/wellness-center/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/05.jpg",
+          "alt_text": "올리브 중정으로 열린 하이드로테라피 풀",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/wellness-center/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/06.jpg",
+          "alt_text": "전용 테라스를 갖춘 프리미엄 회복 스위트",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/wellness-center/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/07.jpg",
+          "alt_text": "리브드 글라스와 밝은 오크의 치료동 복도",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/wellness-center/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/08.jpg",
+          "alt_text": "오크와 트래버틴, 유리의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/wellness-center/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/wellness-center/09.jpg",
+          "alt_text": "바다를 향해 열린 루프탑 힐링 가든",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/wellness-center/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-art-center",
+      "name": "영도 컨템포러리 아트센터",
+      "name_en": "YEONGDO CONTEMPORARY ART CENTER",
+      "slug": "art-center",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "CULTURE",
+      "short_description": "노출콘크리트 매스와 투명한 아트리움으로 항구에 열린 공공 문화의 장면을 만든 미술관.",
+      "intro_title": "도시와 항구 사이에 문화의 여백을 열다.",
+      "detail_description": "보드폼 콘크리트의 무게감과 로이 유리의 투명성, 따뜻한 오크의 촉감을 대비시켰습니다. 광장과 로비, 메인 갤러리, 블랙박스, 교육공간은 항구 풍경을 선택적으로 드러내며 서로 다른 예술 경험을 담습니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/art-center/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "항구에 자리한 노출콘크리트 미술관의 야경",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 26,
+      "legacy_path": "project-art-center.html",
+      "images": [
+        {
+          "image_url": "./images/projects/art-center/01.jpg",
+          "alt_text": "항구에 자리한 컨템포러리 아트센터의 야경",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/art-center/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/02.jpg",
+          "alt_text": "항구 빛이 들어오는 미술관의 공공 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/art-center/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/03.jpg",
+          "alt_text": "클러스터리 빛으로 채운 메인 갤러리",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/art-center/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/04.jpg",
+          "alt_text": "미디어 설치를 위한 블랙박스 갤러리",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/art-center/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/05.jpg",
+          "alt_text": "수직 채광을 품은 노출콘크리트 계단",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/art-center/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/06.jpg",
+          "alt_text": "항구 전망의 뮤지엄 카페와 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/art-center/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/07.jpg",
+          "alt_text": "오크 흡음벽의 교육 오디토리움",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/art-center/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/08.jpg",
+          "alt_text": "노출콘크리트와 블랙 스틸의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/art-center/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/art-center/09.jpg",
+          "alt_text": "해안 광장에서 바라본 아트센터의 주간 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/art-center/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-urban-hotel",
+      "name": "서울 그랜드 시티 호텔",
+      "name_en": "SEOUL GRAND CITY HOTEL",
+      "slug": "urban-hotel",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "HOSPITALITY",
+      "short_description": "그랜드 로비와 800석 연회장, 다이닝과 스위트를 하나의 재료 언어로 완성한 5성급 호텔.",
+      "intro_title": "도착부터 객실까지 하나의 장면으로 이어지다.",
+      "detail_description": "딥그린 대리석 포털과 플루티드 월넛, 에이지드 브론즈를 반복해 도착의 순간부터 강한 인상을 만들었습니다. 로비와 라운지, 연회장, 레스토랑과 객실 스위트는 서로 다른 밀도를 가지면서도 같은 재료의 리듬을 공유합니다.",
+      "project_scope": "CONCEPT DESIGN STUDY",
+      "cover_image_url": "./images/projects/urban-hotel/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "딥그린 대리석과 브론즈 조명의 5성급 도심 호텔 로비",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 27,
+      "legacy_path": "project-urban-hotel.html",
+      "images": [
+        {
+          "image_url": "./images/projects/urban-hotel/01.jpg",
+          "alt_text": "딥그린 대리석 포털이 이어지는 그랜드 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/urban-hotel/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/02.jpg",
+          "alt_text": "브론즈 캐노피와 대리석 포털의 호텔 진입부",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/urban-hotel/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/03.jpg",
+          "alt_text": "도시 야경을 바라보는 메인 리셉션",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/urban-hotel/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/04.jpg",
+          "alt_text": "다양한 좌석군으로 구성한 대형 로비 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/urban-hotel/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/05.jpg",
+          "alt_text": "브론즈 천장 조형물의 800석 그랜드 볼룸",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/urban-hotel/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/06.jpg",
+          "alt_text": "야경을 담은 호텔 시그니처 레스토랑",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/urban-hotel/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/07.jpg",
+          "alt_text": "그린 대리석 벽난로가 있는 프레지덴셜 스위트",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/urban-hotel/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/08.jpg",
+          "alt_text": "도심 전망의 실내 스파와 랩 풀",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/urban-hotel/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/urban-hotel/09.jpg",
+          "alt_text": "대리석과 월넛, 브론즈의 호텔 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/urban-hotel/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-marina-club",
+      "name": "다대포 마리나 클럽",
+      "name_en": "DADAEPO MARINA CLUB",
+      "slug": "marina-club",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "HOSPITALITY",
+      "short_description": "복층 라운지와 다이닝, 이벤트 홀을 넓은 테라스로 연결한 대형 프라이빗 마리나 클럽.",
+      "intro_title": "바다를 클럽의 가장 가까운 일상으로 들이다.",
+      "detail_description": "밝은 석회석과 티크, 딥 네이비와 새틴 니켈로 절제된 해양의 인상을 만들었습니다. 복층 그레이트 룸과 멤버 라운지, 다이닝, 이벤트 홀과 스파가 넓은 테라스를 통해 마리나와 직접 이어집니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/marina-club/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "석양의 마리나를 바라보는 대형 요트 클럽 라운지",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 28,
+      "legacy_path": "project-marina-club.html",
+      "images": [
+        {
+          "image_url": "./images/projects/marina-club/01.jpg",
+          "alt_text": "석양의 마리나를 바라보는 복층 클럽 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/marina-club/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/02.jpg",
+          "alt_text": "마리나와 나란히 이어지는 클럽하우스 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/marina-club/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/03.jpg",
+          "alt_text": "티크 천장과 통석 데스크의 멤버 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/marina-club/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/04.jpg",
+          "alt_text": "석회석 벽난로가 있는 프라이빗 멤버 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/marina-club/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/05.jpg",
+          "alt_text": "선셋 뷰를 담은 워터프런트 다이닝",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/marina-club/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/06.jpg",
+          "alt_text": "티크와 새틴 니켈의 메인 칵테일 바",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/marina-club/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/07.jpg",
+          "alt_text": "테라스로 열리는 대형 프라이빗 이벤트 홀",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/marina-club/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/08.jpg",
+          "alt_text": "수공간과 연결된 프리미엄 스파 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/marina-club/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/marina-club/09.jpg",
+          "alt_text": "티크와 석회석, 네이비 패브릭의 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/marina-club/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-public-library",
+      "name": "백양 시민도서관",
+      "name_en": "BAEKYANG CIVIC LIBRARY",
+      "slug": "public-library",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "PUBLIC",
+      "short_description": "5개 층의 서가와 계단식 열람 공간, 정원과 커뮤니티 시설을 품은 대형 시민도서관.",
+      "intro_title": "배움과 휴식이 층마다 자연스럽게 교차하다.",
+      "detail_description": "밝은 오크 격자 지붕 아래 계단식 열람 공간과 정원, 여러 층의 서가를 배치했습니다. 어린이 도서관과 강당, 카페, 조용한 열람실은 중앙 아트리움을 공유하며 서로의 활동을 부드럽게 연결합니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/public-library/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "목구조 격자 지붕 아래 펼쳐진 대형 시민도서관 아트리움",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 29,
+      "legacy_path": "project-public-library.html",
+      "images": [
+        {
+          "image_url": "./images/projects/public-library/01.jpg",
+          "alt_text": "목구조 격자 지붕 아래의 중앙 열람 아트리움",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/public-library/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/02.jpg",
+          "alt_text": "넓은 시민광장과 목재 스크린의 도서관 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/public-library/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/03.jpg",
+          "alt_text": "정원과 계단식 열람석이 만나는 중앙 공간",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/public-library/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/04.jpg",
+          "alt_text": "아트리움을 내려다보는 성인 열람층과 서가",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/public-library/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/05.jpg",
+          "alt_text": "곡면 서가와 정원으로 구성한 어린이 도서관",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/public-library/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/06.jpg",
+          "alt_text": "오크 흡음벽의 시민 강당",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/public-library/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/07.jpg",
+          "alt_text": "정원으로 열린 카페와 매거진 라운지",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/public-library/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/08.jpg",
+          "alt_text": "오크 격자 지붕과 테라조 계단의 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/public-library/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/public-library/09.jpg",
+          "alt_text": "푸른 저녁에 빛나는 도서관의 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/public-library/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-culinary-hall",
+      "name": "남포 컬리너리 홀",
+      "name_en": "NAMPO CULINARY HALL",
+      "slug": "culinary-hall",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "COMMERCIAL",
+      "short_description": "벽돌 산업 유산 안에 푸드홀과 다이닝, 베이커리와 200석 컬리너리 극장을 담은 복합공간.",
+      "intro_title": "도시의 오래된 골격에 새로운 미식 문화를 담다.",
+      "detail_description": "붉은 벽돌 볼트와 블랙 스틸의 원형을 보존하고 패티네이티드 코퍼와 스모크드 오크를 새롭게 더했습니다. 중앙 바와 다이닝 파빌리온, 베이커리, 마켓 아케이드와 컬리너리 극장이 긴 산업 공간 안에서 하나의 밤 풍경을 만듭니다.",
+      "project_scope": "INTERIOR ADAPTIVE REUSE",
+      "cover_image_url": "./images/projects/culinary-hall/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "산업 유산을 재생한 대형 프리미엄 푸드홀의 중앙 바",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 30,
+      "legacy_path": "project-culinary-hall.html",
+      "images": [
+        {
+          "image_url": "./images/projects/culinary-hall/01.jpg",
+          "alt_text": "벽돌 산업 유산을 재생한 대형 컬리너리 홀",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/culinary-hall/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/02.jpg",
+          "alt_text": "붉은 벽돌과 코퍼 캐노피의 컬리너리 홀 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/culinary-hall/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/03.jpg",
+          "alt_text": "상층 갤러리에서 내려다본 중앙 코퍼 바",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/culinary-hall/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/04.jpg",
+          "alt_text": "벽돌 베이 안에 구성한 시그니처 다이닝",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/culinary-hall/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/05.jpg",
+          "alt_text": "코퍼 오븐과 긴 카운터의 아티장 베이커리",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/culinary-hall/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/06.jpg",
+          "alt_text": "다이닝 파빌리온을 잇는 대형 마켓 아케이드",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/culinary-hall/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/07.jpg",
+          "alt_text": "200석 규모의 컬리너리 이벤트 극장",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/culinary-hall/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/08.jpg",
+          "alt_text": "벽돌과 코퍼, 블랙 스틸의 접합 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/culinary-hall/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/culinary-hall/09.jpg",
+          "alt_text": "늦은 저녁 빛으로 채워진 컬리너리 홀 전경",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/culinary-hall/09.jpg"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "seed-financial-center",
+      "name": "부산 파이낸셜 센터",
+      "name_en": "BUSAN FINANCIAL CENTER",
+      "slug": "financial-center",
+      "project_type": "CONCEPT",
+      "year": "",
+      "location": "SOUTH KOREA",
+      "category": "WORKPLACE",
+      "short_description": "랜드마크 타워의 공공 로비와 컨퍼런스, 이그제큐티브 업무층을 아우르는 대형 금융 본사.",
+      "intro_title": "신뢰를 구조와 재료의 질서로 표현하다.",
+      "detail_description": "솟은 트래버틴 기둥과 다크 브론즈 메쉬 천장, 블랙 스톤의 수평선을 통해 명료하고 권위 있는 첫인상을 만들었습니다. 퍼블릭 로비와 컨퍼런스, 이그제큐티브 층과 임직원 공간까지 같은 비례와 정밀한 디테일을 유지합니다.",
+      "project_scope": "ARCHITECTURE INTERIOR",
+      "cover_image_url": "./images/projects/financial-center/01.jpg",
+      "cover_storage_path": null,
+      "cover_alt": "트래버틴 기둥과 브론즈 천장의 대형 금융 본사 로비",
+      "is_home_featured": false,
+      "home_order": null,
+      "sort_order": 31,
+      "legacy_path": "project-financial-center.html",
+      "images": [
+        {
+          "image_url": "./images/projects/financial-center/01.jpg",
+          "alt_text": "트래버틴 기둥과 브론즈 천장의 금융 본사 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 1,
+          "source_path": "./images/projects/financial-center/01.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/02.jpg",
+          "alt_text": "도시 광장을 마주한 금융센터 타워 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 2,
+          "source_path": "./images/projects/financial-center/02.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/03.jpg",
+          "alt_text": "깊은 캐노피와 통석 벽의 메인 엔트런스",
+          "width": null,
+          "height": null,
+          "sort_order": 3,
+          "source_path": "./images/projects/financial-center/03.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/04.jpg",
+          "alt_text": "트래버틴 피어 사이로 이어지는 퍼블릭 로비",
+          "width": null,
+          "height": null,
+          "sort_order": 4,
+          "source_path": "./images/projects/financial-center/04.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/05.jpg",
+          "alt_text": "도시 전망을 담은 메인 보드룸",
+          "width": null,
+          "height": null,
+          "sort_order": 5,
+          "source_path": "./images/projects/financial-center/05.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/06.jpg",
+          "alt_text": "브론즈와 오크로 구성한 이그제큐티브 업무층",
+          "width": null,
+          "height": null,
+          "sort_order": 6,
+          "source_path": "./images/projects/financial-center/06.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/07.jpg",
+          "alt_text": "대형 사내 컨퍼런스 오디토리움",
+          "width": null,
+          "height": null,
+          "sort_order": 7,
+          "source_path": "./images/projects/financial-center/07.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/08.jpg",
+          "alt_text": "블랙 스톤과 브론즈 메쉬의 마감 디테일",
+          "width": null,
+          "height": null,
+          "sort_order": 8,
+          "source_path": "./images/projects/financial-center/08.jpg"
+        },
+        {
+          "image_url": "./images/projects/financial-center/09.jpg",
+          "alt_text": "푸른 저녁에 빛나는 금융센터의 타워 외관",
+          "width": null,
+          "height": null,
+          "sort_order": 9,
+          "source_path": "./images/projects/financial-center/09.jpg"
+        }
+      ],
+      "published": true
+    }
+  ]
+}

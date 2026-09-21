@@ -982,29 +982,6 @@ body::selection{background:var(--yiso-red);color:#fff}
   height:3rem;
   background:linear-gradient(var(--yiso-red),transparent);
 }
-.yiso-pointer{
-  position:fixed;
-  z-index:10010;
-  top:-13px;
-  left:-13px;
-  width:26px;
-  height:26px;
-  border:1px solid rgba(255,72,48,.72);
-  border-radius:50%;
-  opacity:0;
-  pointer-events:none;
-  transition:width .32s var(--yiso-ease),height .32s var(--yiso-ease),top .32s var(--yiso-ease),left .32s var(--yiso-ease),background-color .32s ease,opacity .2s ease;
-  will-change:transform;
-}
-.yiso-pointer.is-active{opacity:1}
-.yiso-pointer.is-interactive{
-  top:-22px;
-  left:-22px;
-  width:44px;
-  height:44px;
-  background:rgba(241,42,15,.1);
-  box-shadow:0 0 28px rgba(241,42,15,.12);
-}
 
 /* The native arrow disappears only after the custom cursor is active.
    This keeps the page usable if JavaScript is unavailable. */
@@ -1782,12 +1759,10 @@ footer::before,.editorial-footer::before,.archive-footer::before,.project-footer
 }
 
 @media(hover:none),(pointer:coarse){
-  .yiso-pointer{display:none}
   .yiso-card-light{display:none!important}
 }
 
 @media(prefers-reduced-motion:reduce){
-  .yiso-pointer{display:none}
   .values-compass::before{animation:none}
   .motion-ready .motion-item,.motion-ready .motion-item.is-visible{opacity:1;filter:none;transform:none;animation:none}
   .process-line{background-size:100% 1px}

@@ -58,6 +58,8 @@
 </style>
 <link rel="stylesheet" href="./global.css"/>
 <link rel="stylesheet" href="./built-projects.css"/>
+<script src="./config.js"></script>
+<link rel="stylesheet" href="./cms/cms.css"/>
 </head>
 <body>
 <main>
@@ -208,71 +210,7 @@
 <h2>공간의 종류가 달라도<br/>완성도를 보는 기준은 같습니다.</h2>
 <p>HOSPITALITY / RESIDENTIAL<br/>COMMERCIAL / WORKPLACE / PUBLIC</p>
 </div>
-<div class="space-list">
-<article class="space-card space-card--portrait">
-<a class="space-image-wrap project-card-link" href="./project-built-union-square.html" aria-label="유니온 스퀘어 시공 프로젝트 상세 보기">
-<img class="space-image" loading="lazy" decoding="async" width="1448" height="1086" src="./images/built/union-square/updated-01.png" alt="유니온 스퀘어 대표 사진"/>
-<span class="image-corner" aria-hidden="true">YISO / <!-- -->01</span><span class="built-badge">시공 · BUILT</span>
-</a>
-<div class="space-copy">
-<div class="space-meta">
-<span>01</span>
-<span>COMMERCIAL</span>
-</div>
-<h3>유니온 스퀘어</h3>
-<p>유리와 짙은 프레임의 정돈된 입면, 열린 진입부가 도시의 흐름을 받아들이는 빌딩.</p>
-<a class="project-link" href="./project-built-union-square.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</a>
-</div>
-</article>
-<article class="space-card space-card--landscape">
-<a class="space-image-wrap project-card-link" href="./project-built-spa-the-space.html" aria-label="스파 더 스페이스 시공 프로젝트 상세 보기">
-<img class="space-image" loading="lazy" decoding="async" width="1536" height="1024" src="./images/built/spa-the-space/updated-01.png" alt="스파 더 스페이스 대표 사진"/>
-<span class="image-corner" aria-hidden="true">YISO / <!-- -->02</span><span class="built-badge">시공 · BUILT</span>
-</a>
-<div class="space-copy">
-<div class="space-meta">
-<span>02</span>
-<span>COMMERCIAL</span>
-</div>
-<h3>스파 더 스페이스</h3>
-<p>높은 층고와 밝은 석재, 수직으로 흐르는 빛이 휴식의 첫 장면을 만드는 스파 공간.</p>
-<a class="project-link" href="./project-built-spa-the-space.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</a>
-</div>
-</article>
-<article class="space-card space-card--wide">
-<a class="space-image-wrap project-card-link" href="./project-built-geumsaem-library.html" aria-label="금샘도서관 시공 프로젝트 상세 보기">
-<img class="space-image" loading="lazy" decoding="async" width="1448" height="1086" src="./images/built/geumsaem-library/01.png" alt="금샘도서관 대표 사진"/>
-<span class="image-corner" aria-hidden="true">YISO / <!-- -->03</span><span class="built-badge">시공 · BUILT</span>
-</a>
-<div class="space-copy">
-<div class="space-meta">
-<span>03</span>
-<span>CULTURAL</span>
-</div>
-<h3>금샘도서관</h3>
-<p>리듬감 있는 외벽과 넓은 유리면, 열린 진입 공간이 배움의 일상으로 이어지는 도서관.</p>
-<a class="project-link" href="./project-built-geumsaem-library.html">프로젝트 보기 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
-<path d="M5 12h14">
-</path>
-<path d="m12 5 7 7-7 7">
-</path>
-</svg>
-</a>
-</div>
-</article>
-</div>
+<div class="space-list" data-home-projects><p class="cms-list-loading" data-cms-loading>대표 프로젝트를 불러오는 중입니다.</p></div>
 </section>
 <section class="standard-section">
 <div class="standard-head section-shell">
@@ -393,5 +331,6 @@
 </footer>
 </main>
 <script src="./site-motion.js"></script>
+<script type="module" src="./cms/projects-render.js"></script>
 </body>
 </html>

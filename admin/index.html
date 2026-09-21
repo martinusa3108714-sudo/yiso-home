@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <title>YISO ADMIN</title>
+  <link rel="icon" href="../favicon.svg"/>
+  <link rel="stylesheet" href="./admin.css"/>
+  <script src="../config.js"></script>
+</head>
+<body>
+  <main>
+    <section class="login-shell" id="loginView">
+      <div class="login-brand"><a href="../index.html">YISO</a><span>CONTENT MANAGEMENT</span></div>
+      <form class="login-card" id="loginForm">
+        <p class="eyebrow">SECURE ADMIN</p>
+        <h1>프로젝트를<br/>관리합니다.</h1>
+        <label>이메일<input id="loginEmail" name="email" type="email" autocomplete="username" required/></label>
+        <label>비밀번호<input id="loginPassword" name="password" type="password" autocomplete="current-password" required/></label>
+        <button class="primary" id="loginButton" type="submit">LOGIN</button>
+        <p class="form-message" id="loginMessage" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="dashboard" id="dashboardView" hidden>
+      <header class="admin-header">
+        <div><a class="admin-brand" href="../index.html">YISO</a><span>ADMIN</span></div>
+        <div class="admin-actions"><span id="adminEmail"></span><button class="ghost" id="logoutButton" type="button">LOGOUT</button></div>
+      </header>
+      <div class="admin-body">
+        <div class="dashboard-head">
+          <div><p class="eyebrow">CONTENT MANAGEMENT</p><h1>PROJECTS</h1><p id="projectCount">프로젝트를 불러오는 중입니다.</p></div>
+          <div class="head-actions"><button class="ghost" id="migrationButton" type="button">기존 프로젝트 가져오기</button><button class="primary" id="newProjectButton" type="button">+ NEW PROJECT</button></div>
+        </div>
+        <div class="notice" id="dashboardMessage" hidden role="status"></div>
+        <div class="project-list" id="projectList" aria-live="polite"></div>
+        <div class="sort-actions" id="sort-actions" hidden><p>끌어서 프로젝트 순서를 바꾼 뒤 저장하세요.</p><button class="primary" id="save-sort-button" type="button">순서 저장</button></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="editor-dialog" id="editorDialog">
+    <form class="editor" id="projectForm">
+      <header><div><p class="eyebrow">PROJECT EDITOR</p><h2 id="editorTitle">프로젝트 등록</h2></div><button class="icon-button" id="closeEditor" type="button" aria-label="닫기">×</button></header>
+      <input id="projectId" name="id" type="hidden"/>
+      <div class="editor-grid">
+        <label class="span-2">프로젝트명<input id="projectName" name="name" required maxlength="120"/></label>
+        <label>영문 프로젝트명<input id="projectNameEn" name="name_en" maxlength="160"/></label>
+        <label>URL SLUG<input id="projectSlug" name="slug" required pattern="[a-z0-9]+(?:-[a-z0-9]+)*" placeholder="project-name"/></label>
+        <label>프로젝트 구분<select id="projectType" name="project_type" required><option value="BUILT">BUILT PROJECT</option><option value="CONCEPT">CONCEPT PROJECT</option></select></label>
+        <label>연도<input id="projectYear" name="year" type="number" min="1900" max="2100" required/></label>
+        <label>위치<input id="projectLocation" name="location" maxlength="120" placeholder="부산, 대한민국"/></label>
+        <label>카테고리<input id="projectCategory" name="category" required maxlength="80" placeholder="RESIDENTIAL"/></label>
+        <label class="span-2">목록용 설명<textarea id="projectShortDescription" name="short_description" required rows="3" maxlength="300"></textarea></label>
+        <label class="span-2">상세페이지 제목<input id="projectIntroTitle" name="intro_title" required maxlength="180"/></label>
+        <label class="span-2">상세 설명<textarea id="projectDetailDescription" name="detail_description" required rows="6" maxlength="2000"></textarea></label>
+        <label>작업 범위<input id="projectScope" name="project_scope" maxlength="120" placeholder="인테리어 시공"/></label>
+        <label>PROJECT 표시 순서<input id="projectSortOrder" name="sort_order" type="number" min="1" required/></label>
+        <label class="check"><input id="projectPublished" name="is_published" type="checkbox" checked/><span>공개</span></label>
+        <label class="check"><input id="projectHomeFeatured" name="is_home_featured" type="checkbox"/><span>HOME 대표 프로젝트</span></label>
+        <label>HOME 표시 순서<select id="projectHomeOrder" name="home_order"><option value="">선택 안 함</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label>
+      </div>
+      <section class="image-manager">
+        <div class="section-head"><div><p class="eyebrow">PROJECT IMAGES</p><h3>상세 이미지</h3></div><label class="upload-button">+ 사진 선택<input id="imageFiles" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden/></label></div>
+        <p class="help">JPG·PNG는 브라우저에서 긴 변 2560px, WebP 품질 86%로 변환된 뒤 업로드됩니다. 카드를 끌어 순서를 바꾸고 별표를 눌러 대표 이미지를 지정하세요.</p>
+        <div class="image-queue" id="imageQueue"></div>
+      </section>
+      <footer><p class="form-message" id="editorMessage" role="alert"></p><div><button class="ghost" id="cancelEditor" type="button">취소</button><button class="primary" data-busy-action type="submit">프로젝트 저장</button></div></footer>
+    </form>
+  </dialog>
+
+  <dialog class="confirm-dialog" id="deleteDialog">
+    <div><p class="eyebrow">DELETE PROJECT</p><h2>정말 이 프로젝트를 삭제하시겠습니까?</h2><p id="deleteProjectName"></p><div><button class="ghost" id="cancelDelete" type="button">취소</button><button class="danger" id="confirmDelete" data-busy-action type="button">삭제</button></div></div>
+  </dialog>
+
+  <dialog class="migration-dialog" id="migrationDialog">
+    <div><button class="icon-button" id="closeMigration" type="button" aria-label="닫기">×</button><p class="eyebrow">INITIAL MIGRATION</p><h2>기존 프로젝트 가져오기</h2><p>현재 사이트의 31개 프로젝트와 이미지를 브라우저에서 WebP로 변환한 뒤 Supabase에 저장합니다. 완료 전까지 창을 닫지 마세요. 중단돼도 다시 실행하면 이미 옮긴 프로젝트는 건너뜁니다.</p><progress id="migrationProgress" max="100" value="0"></progress><p id="migrationStatus">준비됨</p><button class="primary" id="startMigration" data-busy-action type="button">가져오기 시작</button></div>
+  </dialog>
+
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>
