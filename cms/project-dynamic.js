@@ -62,7 +62,7 @@ function renderProject(project, projects) {
       <div class="project-hero-shade"></div>
       <div class="project-hero-content">
         <div class="project-kicker-row"><p class="project-kicker">${kicker}</p>${badge}</div>
-        <h1 id="project-title">${escapeHtml(project.name)}<span>${escapeHtml(project.name_en || "")}</span></h1>
+        <h1 id="project-title">${escapeHtml(project.name)}<span class="project-title-en" lang="en">${escapeHtml(project.name_en || "")}</span></h1>
         <div class="project-hero-bottom"><p>${escapeHtml(project.short_description || "")}</p><a class="project-scroll" href="#gallery">VIEW PROJECT <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></a></div>
       </div>
     </section>

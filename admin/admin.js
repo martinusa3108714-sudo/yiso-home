@@ -27,6 +27,7 @@ const state = {
   editingProject: null,
   imageItems: [],
   coverKey: null,
+  coverDirty: false,
   removedImageIds: new Set(),
   removedStoragePaths: new Set(),
   projectDragSlug: null,
@@ -226,6 +227,7 @@ function emptyEditorState() {
   state.imageItems.forEach((item) => item.pending && URL.revokeObjectURL(item.preview));
   state.imageItems = [];
   state.coverKey = null;
+  state.coverDirty = false;
   state.removedImageIds.clear();
   state.removedStoragePaths.clear();
 }
@@ -293,6 +295,7 @@ function openEditor(project = null) {
     }
   });
   if (!state.coverKey && state.imageItems.length) state.coverKey = state.imageItems[0].key;
+  state.coverDirty = false;
   renderImageQueue();
   setMessage("#editorMessage");
   $("#editorDialog").showModal();
@@ -321,7 +324,7 @@ function renderImageQueue() {
             <span>${item.pending ? `${item.width}×${item.height} · ${formatBytes(item.blob.size)}` : "업로드 완료"}</span>
           </div>
           <div class="image-actions">
-            <button type="button" data-image-action="cover">대표 설정</button>
+            <button type="button" data-image-action="cover" aria-pressed="${state.coverKey === item.key}">${state.coverKey === item.key ? "대표 설정됨" : "대표 설정"}</button>
             ${item.gallery ? '<button type="button" data-image-action="left" aria-label="앞으로 이동">←</button><button type="button" data-image-action="right" aria-label="뒤로 이동">→</button>' : ""}
             <button type="button" data-image-action="remove" class="danger">삭제</button>
           </div>
@@ -348,7 +351,11 @@ function renderImageQueue() {
     element.addEventListener("click", (event) => {
       const action = event.target.closest("[data-image-action]")?.dataset.imageAction;
       if (!action) return;
-      if (action === "cover") state.coverKey = key;
+      if (action === "cover" && state.coverKey !== key) {
+        state.coverKey = key;
+        state.coverDirty = true;
+        setMessage("#editorMessage", "대표 이미지가 변경되었습니다. 저장하면 홈페이지 커버에 반영됩니다.", "success");
+      }
       if (action === "remove") removeImage(key);
       if (action === "left") shiftImage(key, -1);
       if (action === "right") shiftImage(key, 1);
@@ -395,7 +402,10 @@ function removeImage(key) {
   if (item.storage_path) state.removedStoragePaths.add(item.storage_path);
   if (item.pending) URL.revokeObjectURL(item.preview);
   state.imageItems = state.imageItems.filter((candidate) => candidate.key !== key);
-  if (state.coverKey === key) state.coverKey = state.imageItems[0]?.key || null;
+  if (state.coverKey === key) {
+    state.coverKey = state.imageItems[0]?.key || null;
+    state.coverDirty = true;
+  }
 }
 
 async function addSelectedFiles(files) {
@@ -421,7 +431,10 @@ async function addSelectedFiles(files) {
         alt_text: file.name.replace(/\.[^.]+$/, ""),
         originalName: file.name,
       });
-      if (!state.coverKey) state.coverKey = key;
+      if (!state.coverKey) {
+        state.coverKey = key;
+        state.coverDirty = true;
+      }
       renderImageQueue();
     }
     setMessage("#editorMessage", "WebP 변환을 완료했습니다. 대표 이미지와 순서를 확인해주세요.", "success");
@@ -532,14 +545,18 @@ async function saveProject(event) {
     if (!coverItem?.image_url) throw new Error("대표 이미지 업로드에 실패했습니다.");
     const coverChanged =
       !state.editingProject ||
+      state.coverDirty ||
       coverItem.image_url !== state.editingProject.cover_image_url ||
       coverItem.storage_path !== state.editingProject.cover_storage_path;
     if (coverChanged) {
-      const coverBlob = coverItem.blob || (await fetch(coverItem.image_url)).blob();
-      const coverPath = state.editingProject
-        ? `${payload.slug}/cover-${crypto.randomUUID().slice(0, 8)}.webp`
-        : `${payload.slug}/cover.webp`;
-      const coverUpload = await uploadBlob(coverPath, coverBlob, true);
+      let coverBlob = coverItem.blob;
+      if (!coverBlob) {
+        const coverResponse = await fetch(coverItem.image_url, { cache: "no-store" });
+        if (!coverResponse.ok) throw new Error("선택한 대표 이미지를 불러오지 못했습니다.");
+        coverBlob = await coverResponse.blob();
+      }
+      const coverPath = `${payload.slug}/cover-${Date.now()}-${crypto.randomUUID().slice(0, 8)}.webp`;
+      const coverUpload = await uploadBlob(coverPath, coverBlob);
       uploadedPaths.push(coverPath);
       payload.cover_image_url = coverUpload.url;
       payload.cover_storage_path = coverUpload.path;
@@ -555,11 +572,32 @@ async function saveProject(event) {
 
     let projectId = state.editingProject?.id;
     if (projectId) {
-      const { error } = await supabase.from("projects").update(payload).eq("id", projectId);
+      const { data: savedProject, error } = await supabase
+        .from("projects")
+        .update(payload)
+        .eq("id", projectId)
+        .select("id, cover_image_url, cover_storage_path")
+        .single();
       if (error) throw error;
+      if (
+        savedProject.cover_image_url !== payload.cover_image_url ||
+        savedProject.cover_storage_path !== payload.cover_storage_path
+      ) {
+        throw new Error("대표 이미지 변경 확인에 실패했습니다. 다시 저장해주세요.");
+      }
     } else {
-      const { data, error } = await supabase.from("projects").insert(payload).select("id").single();
+      const { data, error } = await supabase
+        .from("projects")
+        .insert(payload)
+        .select("id, cover_image_url, cover_storage_path")
+        .single();
       if (error) throw error;
+      if (
+        data.cover_image_url !== payload.cover_image_url ||
+        data.cover_storage_path !== payload.cover_storage_path
+      ) {
+        throw new Error("대표 이미지 저장 확인에 실패했습니다. 다시 저장해주세요.");
+      }
       projectId = data.id;
       insertedProjectId = data.id;
     }
@@ -594,7 +632,10 @@ async function saveProject(event) {
     }
 
     if (state.removedStoragePaths.size) {
-      const activePaths = new Set(state.imageItems.map((item) => item.storage_path).filter(Boolean));
+      const activePaths = new Set([
+        ...galleryItems().map((item) => item.storage_path),
+        payload.cover_storage_path,
+      ].filter(Boolean));
       const removable = [...state.removedStoragePaths].filter((path) => !activePaths.has(path));
       if (removable.length) await supabase.storage.from(cmsConfig.storageBucket).remove(removable);
     }
