@@ -21,6 +21,7 @@
 - 프로젝트 구분: BUILT 16개 / CONCEPT 15개
 - 상세 이미지: 324개 로컬 원본 경로 정상
 - HOME 대표: 유니온 스퀘어 / 스파 더 스페이스 / 금샘도서관, 순서 1~3 정상
+- HOME `VIEW ALL PROJECTS` 숫자: 공개 프로젝트 총개수와 동적 연동
 - 기존 프로젝트 URL 31개: 동적 상세페이지 리다이렉트 정상
 - 공개 CMS seed fallback: 31개 프로젝트와 324개 이미지 정규화 정상
 - 관리자 ES Module: import/export 연결 정상

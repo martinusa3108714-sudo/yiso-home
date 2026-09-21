@@ -6,7 +6,7 @@
 
 1. Supabase에서 새 프로젝트를 만듭니다.
 2. `SQL Editor`에서 [`supabase/schema.sql`](./supabase/schema.sql) 전체를 실행합니다.
-3. `Authentication → Users`에 관리자 UID `f67b941e-9ef4-4cbc-99e5-da0777b3cb8a`가 존재하는지 확인합니다.
+3. `Authentication → Users`에 관리자 UID `a38f37f4-f7a8-4769-9ced-59d5babc31a9`가 존재하는지 확인합니다.
 4. 이 UID의 관리자 등록문은 `schema.sql` 끝부분에 이미 포함돼 있으므로 별도 입력할 필요가 없습니다.
 
 스키마는 다음 보안 규칙을 함께 설정합니다.

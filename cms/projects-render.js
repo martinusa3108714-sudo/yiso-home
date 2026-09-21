@@ -50,6 +50,7 @@ async function render() {
     if (conceptGrid) conceptGrid.innerHTML = concept.map(archiveCard).join("");
     document.querySelectorAll("[data-built-count]").forEach((node) => { node.textContent = String(built.length).padStart(2, "0"); });
     document.querySelectorAll("[data-concept-count]").forEach((node) => { node.textContent = String(concept.length).padStart(2, "0"); });
+    document.querySelectorAll("[data-total-project-count]").forEach((node) => { node.textContent = `VIEW ALL PROJECTS / ${String(projects.length).padStart(2, "0")}`; });
     const summary = document.querySelector("[data-project-summary]");
     if (summary) summary.textContent = `${String(built.length).padStart(2, "0")} BUILT · ${String(concept.length).padStart(2, "0")} CONCEPTS`;
     const home = document.querySelector("[data-home-projects]");
