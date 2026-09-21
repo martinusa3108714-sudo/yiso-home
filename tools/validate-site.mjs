@@ -82,6 +82,20 @@ const cmsCss = read("cms/cms.css");
 check(dynamicProject.includes('class="project-title-en"'), "상세 영문명 전용 요소");
 check(cmsCss.includes("word-spacing:.3em"), "상세 영문명 단어 간격");
 check(cmsCss.includes("letter-spacing:.075em"), "상세 영문명 자간");
+for (const asset of [
+  "assets/brand/yiso-wordmark-light.png",
+  "assets/brand/yiso-symbol-light.png",
+  "assets/brand/yiso-favicon.png",
+]) {
+  check(exists(asset), `브랜드 자산 ${asset}`);
+}
+for (const page of ["index.html", "about.html", "process.html", "contact.html", "inquiry.html", "thanks.html", "spaces.html", "project.html"]) {
+  check(read(page).includes("brand-wordmark-image"), `${page}: 공식 워드마크 적용`);
+  check(read(page).includes("yiso-wordmark-light.png?v=20260921-tight"), `${page}: 조정된 워드마크 캐시 갱신`);
+}
+check(adminHtml.includes("yiso-symbol-light.png"), "관리자 로그인 도형 로고 적용");
+check(adminHtml.includes("yiso-wordmark-light.png"), "관리자 헤더 워드마크 적용");
+check(read("global.css").includes("width:clamp(5.25rem,5.9vw,6rem)!important"), "축소 자간 워드마크 헤더 비율");
 const schema = read("supabase/schema.sql");
 check(schema.includes("enable row level security"), "RLS 활성화 SQL");
 check(schema.includes("public.is_yiso_admin()"), "관리자 권한 정책");
