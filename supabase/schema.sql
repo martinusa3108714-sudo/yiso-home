@@ -275,5 +275,5 @@ to authenticated
 using (bucket_id = 'projects' and public.is_yiso_admin());
 
 insert into public.admin_users(user_id)
-values ('f67b941e-9ef4-4cbc-99e5-da0777b3cb8a')
+values ('a38f37f4-f7a8-4769-9ced-59d5babc31a9')
 on conflict (user_id) do nothing;
