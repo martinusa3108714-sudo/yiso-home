@@ -3954,7 +3954,7 @@ main+footer,
 /* V5.33: native cursor */
 .yiso-pointer{display:none!important}
 
-/* CMS V1.3 — official YISO wordmark and symbol system. */
+/* CMS V1.4 — refined YISO wordmark system. */
 .brand-wordmark-image{
   display:block;
   width:100%;
@@ -3968,7 +3968,7 @@ main+footer,
   letter-spacing:0!important;
 }
 .global-brand::after{content:none!important}
-.global-brand .brand-wordmark-image{filter:drop-shadow(0 2px 12px rgba(0,0,0,.24))}
+.global-brand .brand-wordmark-image{filter:drop-shadow(0 2px 12px rgba(0,0,0,.32));opacity:1}
 
 .footer-brand,
 .editorial-footer .footer-wordmark,
@@ -3986,18 +3986,7 @@ footer::after,
 .editorial-footer::after,
 .archive-footer::after,
 .project-footer::after,
-.inquiry-footer::after{
-  content:"";
-  position:absolute;
-  z-index:0;
-  top:2.4rem;
-  right:4.2vw;
-  width:clamp(9rem,14vw,15rem);
-  aspect-ratio:517/400;
-  background:url("./assets/brand/yiso-symbol-light.png") center/contain no-repeat;
-  opacity:.075;
-  pointer-events:none;
-}
+.inquiry-footer::after{content:none!important}
 footer>*,
 .editorial-footer>*,
 .archive-footer>*,
@@ -4013,15 +4002,5 @@ footer>*,
   .archive-footer>a:first-child{
     width:min(11.25rem,64vw)!important;
     max-width:64vw!important;
-  }
-  footer::after,
-  .editorial-footer::after,
-  .archive-footer::after,
-  .project-footer::after,
-  .inquiry-footer::after{
-    top:2.25rem;
-    right:-2rem;
-    width:10rem;
-    opacity:.055;
   }
 }
