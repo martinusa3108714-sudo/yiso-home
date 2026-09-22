@@ -23,6 +23,13 @@
 <meta property="og:image:alt" content="YISO INTERIOR — 공간의 기준을 설계합니다"/>
 <link rel="shortcut icon" type="image/png" href="./assets/brand/yiso-favicon.png"/>
 <link rel="icon" type="image/png" href="./assets/brand/yiso-favicon.png"/>
+<script>
+try{if(sessionStorage.getItem("yiso-cinematic-intro-v2")==="seen"&&!new URLSearchParams(location.search).has("intro")){document.documentElement.classList.add("yiso-intro-skip")}}catch(e){}
+</script>
+<link rel="preload" href="./assets/intro/development-01.webp" as="image"/>
+<link rel="preload" href="./assets/intro/architecture-01.webp" as="image"/>
+<link rel="preload" href="./assets/intro/interior-01.webp" as="image"/>
+<link rel="stylesheet" href="./intro.css?v=20260922-cinematic-v2"/>
 <style>
 .hero-image{background-image:url("./images/hero-hotel.jpg")}
 .discipline-group{display:flex;flex:0 0 max(100vw,58rem);align-items:center;justify-content:space-around;padding:0 clamp(1rem,2vw,2.5rem)}
@@ -62,6 +69,32 @@
 <link rel="stylesheet" href="./cms/cms.css"/>
 </head>
 <body>
+<section class="yiso-intro" id="yiso-intro" role="button" tabindex="0" aria-label="YISO 홈페이지 열기">
+  <div class="yiso-intro__statement">
+    <h1 class="yiso-intro__headline">WE BUILD FROM THE BEGINNING</h1>
+  </div>
+  <div class="yiso-intro__panels" aria-hidden="true">
+    <article class="yiso-intro__panel yiso-intro__panel--development">
+      <img class="yiso-intro__image is-active" src="./assets/intro/development-01.webp" alt=""/>
+      <img class="yiso-intro__image" src="./assets/intro/development-02.webp" alt=""/>
+      <div class="yiso-intro__veil"></div>
+      <p class="yiso-intro__label">시행</p>
+    </article>
+    <article class="yiso-intro__panel yiso-intro__panel--architecture">
+      <img class="yiso-intro__image is-active" src="./assets/intro/architecture-01.webp" alt=""/>
+      <img class="yiso-intro__image" src="./assets/intro/architecture-02.webp" alt=""/>
+      <div class="yiso-intro__veil"></div>
+      <p class="yiso-intro__label">건축</p>
+    </article>
+    <article class="yiso-intro__panel yiso-intro__panel--interior">
+      <img class="yiso-intro__image is-active" src="./assets/intro/interior-01.webp" alt=""/>
+      <img class="yiso-intro__image" src="./assets/intro/interior-02.webp" alt=""/>
+      <div class="yiso-intro__veil"></div>
+      <p class="yiso-intro__label">인테리어</p>
+    </article>
+  </div>
+  <span class="yiso-intro__cursor" aria-hidden="true"></span>
+</section>
 <main>
 <a class="skip-link" href="#content">본문으로 바로가기</a>
 <header class="global-header" aria-label="주요 메뉴">
@@ -331,5 +364,6 @@
 </main>
 <script src="./site-motion.js"></script>
 <script type="module" src="./cms/projects-render.js"></script>
+<script src="./intro.js?v=20260922-cinematic-v2"></script>
 </body>
 </html>
