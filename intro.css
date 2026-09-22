@@ -4,9 +4,23 @@
   --yiso-intro-red: #f12a0f;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 html:not(.yiso-intro-skip),
 html:not(.yiso-intro-skip) body {
   overflow: hidden;
+}
+
+body > main.yiso-home-under-intro {
+  opacity: .78;
+  transition: opacity 1.05s cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity;
+}
+
+body > main.yiso-home-under-intro.is-entering {
+  opacity: 1;
 }
 
 .yiso-intro {
@@ -180,6 +194,7 @@ html:not(.yiso-intro-skip) body {
 .yiso-intro.is-pointer-active .yiso-intro__cursor { opacity: 1; }
 .yiso-intro.is-pressing .yiso-intro__cursor { transform: translate3d(var(--cursor-x, 50vw), var(--cursor-y, 50vh), 0) scale(.68); }
 .yiso-intro.is-opening { pointer-events: none; }
+.yiso-intro.is-opening .yiso-intro__cursor { opacity: 0; }
 
 .yiso-intro-skip .yiso-intro,
 .yiso-intro[hidden] {

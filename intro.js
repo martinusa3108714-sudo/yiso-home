@@ -1,8 +1,8 @@
 (() => {
-  const STORAGE_KEY = "yiso-cinematic-intro-v2";
+  const STORAGE_KEY = "yiso-cinematic-intro-v4";
   const intro = document.getElementById("yiso-intro");
+  if (!intro) return;
   const site = document.querySelector("body > main");
-  if (!intro || !site) return;
 
   const query = new URLSearchParams(window.location.search);
   const forceIntro = query.get("intro") === "1";
@@ -21,6 +21,7 @@
   }
 
   document.documentElement.classList.remove("yiso-intro-skip");
+  if (site) site.classList.add("yiso-home-under-intro");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const panelImages = [...intro.querySelectorAll(".yiso-intro__panel")].map((panel) => [
     ...panel.querySelectorAll(".yiso-intro__image")
@@ -29,6 +30,7 @@
   let opening = false;
   let sliderTimer = 0;
   let cursorFrame = 0;
+  let revealFrame = 0;
   let pointerX = window.innerWidth / 2;
   let pointerY = window.innerHeight / 2;
 
@@ -65,46 +67,55 @@
     opening = true;
     window.clearInterval(sliderTimer);
     intro.classList.add("is-opening");
+    if (site) {
+      void site.offsetWidth;
+      site.classList.add("is-entering");
+    }
+    window.dispatchEvent(new CustomEvent("yiso:home-opening"));
 
     const radius = Math.hypot(
       Math.max(x, window.innerWidth - x),
       Math.max(y, window.innerHeight - y)
-    ) + 48;
-    const startClip = `circle(0px at ${x}px ${y}px)`;
-    const endClip = `circle(${radius}px at ${x}px ${y}px)`;
-    const duration = reducedMotion ? 120 : 1150;
+    ) + 120;
+    const duration = reducedMotion ? 180 : 1320;
+    const startedAt = performance.now();
 
-    site.style.position = "relative";
-    site.style.zIndex = "2147483644";
-    site.style.clipPath = startClip;
-    site.style.webkitClipPath = startClip;
+    const finishOpening = () => {
+      try {
+        sessionStorage.setItem(STORAGE_KEY, "seen");
+      } catch (_) {
+        // The intro still works when storage is unavailable.
+      }
+      if (site) site.classList.remove("yiso-home-under-intro", "is-entering");
+      intro.remove();
+      document.documentElement.classList.add("yiso-intro-skip");
+      window.dispatchEvent(new CustomEvent("yiso:home-entered"));
+    };
 
-    requestAnimationFrame(() => {
-      const animation = site.animate(
-        [
-          { clipPath: startClip, WebkitClipPath: startClip },
-          { clipPath: endClip, WebkitClipPath: endClip }
-        ],
-        { duration, easing: "cubic-bezier(.76, 0, .18, 1)", fill: "forwards" }
-      );
+    const paintReveal = (now) => {
+      const progress = Math.min(1, (now - startedAt) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3.4);
+      const currentRadius = radius * eased;
+      const edge = currentRadius + 8;
+      const mask = `radial-gradient(circle at ${x}px ${y}px, transparent 0, transparent ${currentRadius}px, #000 ${edge}px)`;
+      const fadeProgress = Math.max(0, (progress - .76) / .24);
+      const fadeEased = fadeProgress * fadeProgress * (3 - 2 * fadeProgress);
 
-      animation.finished.catch(() => {}).finally(() => {
-        try {
-          sessionStorage.setItem(STORAGE_KEY, "seen");
-        } catch (_) {
-          // The intro still works when storage is unavailable.
-        }
-        // A fill-forwards animation keeps its clip-path effect even after the
-        // inline style is removed. Cancel it first so the full page is restored.
-        animation.cancel();
-        site.style.removeProperty("position");
-        site.style.removeProperty("z-index");
-        site.style.removeProperty("clip-path");
-        site.style.removeProperty("-webkit-clip-path");
-        intro.remove();
-        document.documentElement.classList.add("yiso-intro-skip");
-      });
-    });
+      // Only the intro overlay is masked. The website below is never clipped,
+      // so no reveal state can remain after the intro is removed.
+      intro.style.maskImage = mask;
+      intro.style.webkitMaskImage = mask;
+      intro.style.opacity = String(1 - fadeEased);
+
+      if (progress < 1) {
+        revealFrame = requestAnimationFrame(paintReveal);
+      } else {
+        revealFrame = 0;
+        finishOpening();
+      }
+    };
+
+    revealFrame = requestAnimationFrame(paintReveal);
   };
 
   intro.addEventListener("click", (event) => openSite(event.clientX, event.clientY));
@@ -117,5 +128,6 @@
   window.addEventListener("pagehide", () => {
     window.clearInterval(sliderTimer);
     if (cursorFrame) cancelAnimationFrame(cursorFrame);
+    if (revealFrame) cancelAnimationFrame(revealFrame);
   }, { once: true });
 })();

@@ -24,14 +24,15 @@
 <link rel="shortcut icon" type="image/png" href="./assets/brand/yiso-favicon.png"/>
 <link rel="icon" type="image/png" href="./assets/brand/yiso-favicon.png"/>
 <script>
-try{if(sessionStorage.getItem("yiso-cinematic-intro-v2")==="seen"&&!new URLSearchParams(location.search).has("intro")){document.documentElement.classList.add("yiso-intro-skip")}}catch(e){}
+try{if(sessionStorage.getItem("yiso-cinematic-intro-v4")==="seen"&&!new URLSearchParams(location.search).has("intro")){document.documentElement.classList.add("yiso-intro-skip")}}catch(e){}
 </script>
 <link rel="preload" href="./assets/intro/development-01.webp" as="image"/>
 <link rel="preload" href="./assets/intro/architecture-01.webp" as="image"/>
 <link rel="preload" href="./assets/intro/interior-01.webp" as="image"/>
-<link rel="stylesheet" href="./intro.css?v=20260922-cinematic-v2"/>
+<link rel="stylesheet" href="./intro.css?v=20260922-cinematic-v4"/>
+<link rel="stylesheet" href="./hero-slideshow.css?v=20260922-hero-v1"/>
 <style>
-.hero-image{background-image:url("./images/hero-hotel.jpg")}
+.hero-image{background-image:none}
 .discipline-group{display:flex;flex:0 0 max(100vw,58rem);align-items:center;justify-content:space-around;padding:0 clamp(1rem,2vw,2.5rem)}
 .discipline-group span{flex-shrink:0;padding-right:0}
 .project-card-link{display:block;color:inherit}
@@ -104,6 +105,15 @@ try{if(sessionStorage.getItem("yiso-cinematic-intro-v2")==="seen"&&!new URLSearc
 </header>
 <section class="hero" id="top" aria-labelledby="hero-title">
 <div class="hero-image" role="img" aria-label="YISO INTERIOR가 제안하는 하이엔드 공간">
+<img class="hero-slide is-active" src="./images/hero-hotel.jpg" alt="" fetchpriority="high" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-02.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-03.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-04.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-05.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-06.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-07.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-08.webp" alt="" decoding="async"/>
+<img class="hero-slide" src="./images/hero-slideshow/hero-09.webp" alt="" decoding="async"/>
 </div>
 <div class="hero-shade">
 </div>
@@ -363,7 +373,8 @@ try{if(sessionStorage.getItem("yiso-cinematic-intro-v2")==="seen"&&!new URLSearc
 </footer>
 </main>
 <script src="./site-motion.js"></script>
+<script src="./hero-slideshow.js?v=20260922-hero-v1"></script>
 <script type="module" src="./cms/projects-render.js"></script>
-<script src="./intro.js?v=20260922-cinematic-v2"></script>
+<script src="./intro.js?v=20260922-cinematic-v4"></script>
 </body>
 </html>
