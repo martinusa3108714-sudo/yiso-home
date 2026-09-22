@@ -94,11 +94,14 @@
         } catch (_) {
           // The intro still works when storage is unavailable.
         }
-        intro.remove();
+        // A fill-forwards animation keeps its clip-path effect even after the
+        // inline style is removed. Cancel it first so the full page is restored.
+        animation.cancel();
         site.style.removeProperty("position");
         site.style.removeProperty("z-index");
         site.style.removeProperty("clip-path");
         site.style.removeProperty("-webkit-clip-path");
+        intro.remove();
         document.documentElement.classList.add("yiso-intro-skip");
       });
     });
