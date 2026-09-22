@@ -14,16 +14,21 @@
   object-fit: cover;
   object-position: 50% 50%;
   opacity: 0;
-  transform: scale(1);
+  transform: scale(1.065);
   filter: brightness(.94) saturate(.92) contrast(1.03);
-  transition: opacity 1.12s cubic-bezier(.4, 0, .2, 1);
+  transition: opacity 1.8s cubic-bezier(.4, 0, .2, 1);
   will-change: opacity, transform;
 }
 
 .hero-slide.is-active {
+  z-index: 3;
+  opacity: 1;
+  animation: yisoHeroZoomOut 7.2s linear both;
+}
+
+.hero-slide.is-active.is-leaving {
   z-index: 2;
   opacity: 1;
-  animation: yisoHeroZoomOut 3.85s linear both;
 }
 
 .hero-slide:nth-child(2) { object-position: 50% 53%; }
@@ -36,7 +41,7 @@
 .hero-slide:nth-child(9) { object-position: 50% 53%; }
 
 @keyframes yisoHeroZoomOut {
-  from { transform: scale(1.075); }
+  from { transform: scale(1.065); }
   to { transform: scale(1); }
 }
 
